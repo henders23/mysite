@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for HE — The Threshold Model</title>
+<meta name="description" content="Abundant feedback. Singular judgement. A model for learning, feedback and assessment in which AI multiplies practice and response, and every act of academic judgement stays human.">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+button{font:inherit}
+.navlink{text-decoration:none;text-underline-offset:6px}
+.navlink:hover{text-decoration:underline}
+.ul-link{text-decoration:underline;text-underline-offset:5px}
+.row .name{text-underline-offset:5px}
+.row:hover .name{text-decoration:underline}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-80px;z-index:10}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
+</head>
+<body>
+<div id="dc-app">
+<div id="top" style="--bg: #FFFFFF; --fg: #000000; --muted: #5E5E5E; --line: #DADADA; --ring: #8A8A8A; --muted-inv: #A3A3A3; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Feedback</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">The Threshold Model</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 56ch; text-wrap: pretty">Abundant feedback. Singular judgement. A model for learning, feedback and assessment in which AI multiplies practice and response, and every act of academic judgement stays human.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Feedback</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Module and programme</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#model" class="navlink" style="font-size: 15px; padding: 12px 0">The model</a>
+<a href="#ladder" class="navlink" style="font-size: 15px; padding: 12px 0">The feedback ladder</a>
+<a href="#principles" class="navlink" style="font-size: 15px; padding: 12px 0">Ten principles</a>
+<a href="#personalisation" class="navlink" style="font-size: 15px; padding: 12px 0">Personalisation</a>
+<a href="#disciplines" class="navlink" style="font-size: 15px; padding: 12px 0">Three disciplines</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">Where should AI give feedback, and where must a human judge?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">Feedback has always been rationed by staff time, and usually arrives after the work is finished, when it can no longer be used (Sadler, 1989; Boud and Molloy, 2013). AI removes the scarcity. The model uses that, without letting AI anywhere near the grade.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6"><strong style="font-weight: 600">The core move:</strong> separate the economy of feedback from the economy of judgement. Put AI wholly inside the first, and wholly outside the second.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">The rigour rule: the standard is common and non-negotiable; the route to it is individual and adaptive.</p>
+</div>
+</div>
+</section>
+
+<section id="model" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Three zones, two crossings, three layers.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three zones</h3>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Workshop</span>
+<span style="font-size: 16px; line-height: 1.55">Rehearsal. Frequent, low-stakes and ungraded by design. Failure is free and repetition unlimited. Each module protects two to four difficulties where AI is switched off.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px"><strong style="font-weight: 600; color: var(--fg)">AI:</strong> instant developmental feedback, Socratic questioning and adaptive practice. The zone AI transforms most.</span>
+</li>
+<li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Commons</span>
+<span style="font-size: 16px; line-height: 1.55">Dialogue. Seminars, studios, moots and peer critique, where human talk is the primary technology. Peers calibrate against exemplars before reviewing each other (Nicol, 2021).</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px"><strong style="font-weight: 600; color: var(--fg)">AI:</strong> only as opponent, stakeholder or amplifier. Never answering what students could answer.</span>
+</li>
+<li style="background: var(--fg); color: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Bench</span>
+<span style="font-size: 16px; line-height: 1.55">Judgement. Human, accountable and standard-referenced, usually twice per module. Judged on the artefact, the student's account of it, and a live conversation.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted-inv); border-top: 1px solid var(--muted-inv); padding-top: 12px"><strong style="font-weight: 600; color: var(--bg)">AI:</strong> none. Structurally excluded: no AI marks, feedback text, ranking, triage or detector output.</span>
+</li>
+</ol>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 28px 40px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Two crossings</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Threshold</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The crossing into judgement. The student brings the artefact, three to five curated Workshop items with a rationale, and a specific AI-use declaration.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Return</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Within ten working days: the judgement plus three feedforward targets. It isn't complete until the student responds in writing (Carless and Boud, 2018).</span></li>
+</ul>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three layers</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Spine</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Personalisation. A student-owned map of 12 to 20 programme capabilities, gathering evidence against each. Never used for progression or misconduct decisions.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">Provocation</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The sparkle. Simulations, awkward clients, counterfactuals and adversaries, each debriefed by a person.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Warrant</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Integrity, with no detection component: declaration, a decision record kept during the work, a live defence, and one assessment per module where AI is genuinely unavailable.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ladder" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Four kinds of feedback. Confusing them is the commonest failure in AI-augmented course design.</p>
+</div>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">The four kinds of feedback in the Threshold Model</caption>
+<thead>
+<tr>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg); width: 18%">Rung</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">From</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">How often</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">Answers</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 0 12px 16px; border-bottom: 1px solid var(--fg)">Graded</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F1 · Verdict</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">AI and automated tools</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Unlimited, in seconds</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Does it conform?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F2 · Interrogation</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">AI, set up to ask, never to answer</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Unlimited, in minutes</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Do you understand what you did?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F3 · Deliberation</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Peers, in the Commons</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Several per term</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">How does this read to another mind?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--fg); vertical-align: top">F4 · Judgement</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top">The academic, at the Bench</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top; color: var(--muted)">Once or twice per module</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top">What standard has been reached?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top; font-weight: 600">Always. The only graded event</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">01</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Judgement is a human act, and it is signed.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">A named person makes and can justify every judgement. AI may not generate, propose, rank, pre-mark, moderate or recommend a grade.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">02</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Abundance in feedback, scarcity in judgement.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Raise formative response by an order of magnitude and cut summative points to the minimum: four graded assessments become two judgement points and thirty-plus feedback events.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">03</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Personalisation adapts the route, never the standard.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Sequence, pace, practice, context and provocation vary. Criteria and level descriptors never do.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">04</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">AI questions; humans answer for.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">AI’s default register is a question. Its instructions are a designed, versioned curriculum artefact written by academics.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">05</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Desirable difficulty is protected.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Each module names its productive difficulties and designs AI out of them (Meyer and Land, 2003).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">06</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Talk is the primary technology.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">AI multiplies conversations but doesn’t replace the ones that matter, and contact hours are protected (Laurillard, 2002).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">07</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Process is evidence, and provenance is assessable.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Students keep a decision record and declare AI use. Honest, extensive use isn’t penalised; misdeclaration is misconduct.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">08</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Every student is answerable, live, for their own work.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">A short, unscripted conversation at every judgement point: the single highest-value change in the model.</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">09</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">No detector may be used as evidence.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Detectors are unreliable and biased against writers of English as an additional language. Suspicion is resolved by conversation (Liang et al., 2023).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">10</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Delight is designed, not incidental.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The sparkle layer is a first-class design object with its own share of curriculum time.</span>
+</span>
+</li>
+
+</ol>
+</div>
+</section>
+
+<section id="personalisation" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Four levers move. The criteria and the grade never do.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; overflow-x: auto">
+<table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">What each personalisation lever can and cannot change</caption>
+<thead><tr>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg); width: 20%">Lever</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">Can vary</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 0 12px 16px; border-bottom: 1px solid var(--fg)">Never varies</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Pathway</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Cases, briefs, texts, projects and contexts</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The capability and the level demanded</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Pace</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">How much practice, over what period</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The Threshold date and the standard applied</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Practice</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Which weaknesses are targeted, at what difficulty</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The full capability set every student must evidence</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Provocation</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Which simulations, personas and stakes a student meets</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The learning outcomes the provocation serves</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Judgement weighs the artefact, the student's account of it, and their answers. The balance follows the discipline.</p>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 40px">
+
+<li style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">Engineering</span>
+<div role="img" aria-label="Engineering weighting: artefact 45%, account 25%, answering 30%" style="display: flex; flex-direction: column; gap: 8px">
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Artefact</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 45%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">45%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Account</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 25%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">25%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Answering</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 30%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">30%</span>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; line-height: 1.5">
+<span><strong style="font-weight: 600">Signature task.</strong> <span style="color: var(--muted)">Find the buried defect in a plausible, AI-generated design package.</span></span>
+<span><strong style="font-weight: 600">Answering.</strong> <span style="color: var(--muted)">A 15-minute design review with two academics and a live change of requirement.</span></span>
+<span><strong style="font-weight: 600">Distinctive rule.</strong> <span style="color: var(--muted)">An unverified simulation result presented as fact counts as a professional error.</span></span>
+</div>
+</li>
+
+<li style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">Law</span>
+<div role="img" aria-label="Law weighting: artefact 35%, account 20%, answering 45%" style="display: flex; flex-direction: column; gap: 8px">
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Artefact</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 35%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">35%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Account</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 20%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">20%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Answering</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 45%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">45%</span>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; line-height: 1.5">
+<span><strong style="font-weight: 600">Signature task.</strong> <span style="color: var(--muted)">Verify every authority in a fluent, partly fabricated memorandum.</span></span>
+<span><strong style="font-weight: 600">Answering.</strong> <span style="color: var(--muted)">Oral advocacy or a client exercise, 12 to 20 minutes, with interventions from the bench, building on simulation-based legal education (Maharg, 2007).</span></span>
+<span><strong style="font-weight: 600">Distinctive rule.</strong> <span style="color: var(--muted)">One fabricated or misdescribed authority caps the artefact mark. In Mata v. Avianca (2023), counsel filed a brief citing cases that did not exist.</span></span>
+</div>
+</li>
+
+<li style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">EAP</span>
+<div role="img" aria-label="EAP weighting: artefact 30%, account 30%, answering 40%" style="display: flex; flex-direction: column; gap: 8px">
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Artefact</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 30%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">30%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Account</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 30%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">30%</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">Answering</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: 40%"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">40%</span>
+</div>
+
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; line-height: 1.5">
+<span><strong style="font-weight: 600">Signature task.</strong> <span style="color: var(--muted)">AI rewrites one of the student’s paragraphs five ways; the student explains what each version does.</span></span>
+<span><strong style="font-weight: 600">Answering.</strong> <span style="color: var(--muted)">A 10 to 15 minute tutorial defence of textual choices.</span></span>
+<span><strong style="font-weight: 600">Distinctive rule.</strong> <span style="color: var(--muted)">The account weighs as much as the text, because the rationale is the learning outcome (Lea and Street, 1998).</span></span>
+</div>
+</li>
+
+</ul>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 68ch">A single institutional policy would be too permissive for law, too restrictive for EAP, and largely irrelevant to engineering.</p>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Start with one module.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Cut the graded assessments to two judgement points, and move the rest into ungraded practice and feedback.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Name the module's two to four protected difficulties, and design AI out of them.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>Write the AI tutor's instructions yourself: withhold the answer, one question at a time, hints only on evidence of effort.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span>At each judgement point, ask for a specific AI-use declaration and hold a short, unscripted conversation of 8 to 12 minutes.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>Return each judgement within ten working days with three feedforward targets, and require a written response.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It is not a workload saving.</strong> <span style="color: var(--muted)">Close to neutral in year one, modestly positive after. Marking falls; oral time is the largest new cost and has to be timetabled.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs regulations behind it.</strong> <span style="color: var(--muted)">Without an explicit ban on AI in judgement, workload pressure erodes the principle within two years.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Oral defence carries equity risk.</strong> <span style="color: var(--muted)">Give written questions at the start, thinking time and an alternative format on request, and assess substance rather than fluency (Tai et al., 2023).</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Scale changes the design.</strong> <span style="color: var(--muted)">Above about 300 students: one conversation per student per year, plus targeted ones where the artefact and account don't match.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Access must be equal.</strong> <span style="color: var(--muted)">The institution has to provide the practice environment, or the model creates two tiers of student.</span></li>
+</ul>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment redesign map</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Deciding which outcomes need a secured judgement point across the programme.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="authorship.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Authorship in the age of AI</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">What the declaration and the live conversation are evidence of.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Boud, D. and Molloy, E. (2013) ‘Rethinking models of feedback for learning: the challenge of design’, <em>Assessment &amp; Evaluation in Higher Education</em>, 38(6), pp. 698–712.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Carless, D. and Boud, D. (2018) ‘The development of student feedback literacy: enabling uptake of feedback’, <em>Assessment &amp; Evaluation in Higher Education</em>, 43(8), pp. 1315–1325.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Laurillard, D. (2002) <em>Rethinking university teaching: a conversational framework for the effective use of learning technologies</em>. 2nd edn. London: RoutledgeFalmer.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Lea, M.R. and Street, B.V. (1998) ‘Student writing in higher education: an academic literacies approach’, <em>Studies in Higher Education</em>, 23(2), pp. 157–172. doi: <a href="https://doi.org/10.1080/03075079812331380364" target="_blank" rel="noopener" class="ul-link">10.1080/03075079812331380364<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’, <em>Patterns</em>, 4(7), article 100779. doi: <a href="https://doi.org/10.1016/j.patter.2023.100779" target="_blank" rel="noopener" class="ul-link">10.1016/j.patter.2023.100779<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Maharg, P. (2007) <em>Transforming legal education: learning and teaching the law in the early twenty-first century</em>. Aldershot: Ashgate.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px"> <em>Mata v. Avianca, Inc.</em> (2023) 678 F. Supp. 3d 443 (S.D.N.Y.).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Meyer, J.H.F. and Land, R. (2003) <em>Threshold concepts and troublesome knowledge: linkages to ways of thinking and practising within the disciplines</em>. ETL Project Occasional Report 4. Edinburgh: University of Edinburgh.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Nicol, D. (2021) ‘The power of internal feedback: exploiting natural comparison processes’, <em>Assessment &amp; Evaluation in Higher Education</em>, 46(5), pp. 756–778.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Sadler, D.R. (1989) ‘Formative assessment and the design of instructional systems’, <em>Instructional Science</em>, 18(2), pp. 119–144.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Tai, J., Ajjawi, R., Bearman, M., Boud, D., Dawson, P. and Jorre de St Jorre, T. (2023) ‘Assessment for inclusion: rethinking contemporary strategies in assessment design’, <em>Higher Education Research &amp; Development</em>, 42(2), pp. 483–497. doi: <a href="https://doi.org/10.1080/07294360.2022.2057451" target="_blank" rel="noopener" class="ul-link">10.1080/07294360.2022.2057451<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher and library records in November 2026.</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full design document has the architecture, the teaching rhythm, staff workload, institutional conditions and templates.</p>
+<a href="threshold-model-document.html" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the design document
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">Use the Redesign Lab to apply it to one module’s feedback and assessment, or join the AI Collegium to develop it in your own practice alongside peers from other institutions.</p>
+</div>
+<a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</div>
+<template id="dc-template">
+<div id="top" style="--bg: {{bg}}; --fg: {{fg}}; --muted: {{muted}}; --line: {{line}}; --ring: {{ring}}; --muted-inv: {{mutedInv}}; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+<sc-if value="{{light}}" hint-placeholder-val="{{ true }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+</sc-if>
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Feedback</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">The Threshold Model</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 56ch; text-wrap: pretty">Abundant feedback. Singular judgement. A model for learning, feedback and assessment in which AI multiplies practice and response, and every act of academic judgement stays human.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Feedback</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Module and programme</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#model" class="navlink" style="font-size: 15px; padding: 12px 0">The model</a>
+<a href="#ladder" class="navlink" style="font-size: 15px; padding: 12px 0">The feedback ladder</a>
+<a href="#principles" class="navlink" style="font-size: 15px; padding: 12px 0">Ten principles</a>
+<a href="#personalisation" class="navlink" style="font-size: 15px; padding: 12px 0">Personalisation</a>
+<a href="#disciplines" class="navlink" style="font-size: 15px; padding: 12px 0">Three disciplines</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">Where should AI give feedback, and where must a human judge?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">Feedback has always been rationed by staff time, and usually arrives after the work is finished, when it can no longer be used (Sadler, 1989; Boud and Molloy, 2013). AI removes the scarcity. The model uses that, without letting AI anywhere near the grade.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6"><strong style="font-weight: 600">The core move:</strong> separate the economy of feedback from the economy of judgement. Put AI wholly inside the first, and wholly outside the second.</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">The rigour rule: the standard is common and non-negotiable; the route to it is individual and adaptive.</p>
+</div>
+</div>
+</section>
+
+<section id="model" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Three zones, two crossings, three layers.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three zones</h3>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Workshop</span>
+<span style="font-size: 16px; line-height: 1.55">Rehearsal. Frequent, low-stakes and ungraded by design. Failure is free and repetition unlimited. Each module protects two to four difficulties where AI is switched off.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px"><strong style="font-weight: 600; color: var(--fg)">AI:</strong> instant developmental feedback, Socratic questioning and adaptive practice. The zone AI transforms most.</span>
+</li>
+<li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Commons</span>
+<span style="font-size: 16px; line-height: 1.55">Dialogue. Seminars, studios, moots and peer critique, where human talk is the primary technology. Peers calibrate against exemplars before reviewing each other (Nicol, 2021).</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px"><strong style="font-weight: 600; color: var(--fg)">AI:</strong> only as opponent, stakeholder or amplifier. Never answering what students could answer.</span>
+</li>
+<li style="background: var(--fg); color: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Bench</span>
+<span style="font-size: 16px; line-height: 1.55">Judgement. Human, accountable and standard-referenced, usually twice per module. Judged on the artefact, the student's account of it, and a live conversation.</span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--muted-inv); border-top: 1px solid var(--muted-inv); padding-top: 12px"><strong style="font-weight: 600; color: var(--bg)">AI:</strong> none. Structurally excluded: no AI marks, feedback text, ranking, triage or detector output.</span>
+</li>
+</ol>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr)); gap: 28px 40px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Two crossings</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Threshold</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The crossing into judgement. The student brings the artefact, three to five curated Workshop items with a rationale, and a specific AI-use declaration.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Return</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Within ten working days: the judgement plus three feedforward targets. It isn't complete until the student responds in writing (Carless and Boud, 2018).</span></li>
+</ul>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three layers</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Spine</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Personalisation. A student-owned map of 12 to 20 programme capabilities, gathering evidence against each. Never used for progression or misconduct decisions.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">Provocation</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The sparkle. Simulations, awkward clients, counterfactuals and adversaries, each debriefed by a person.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 19px; font-weight: 600">The Warrant</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Integrity, with no detection component: declaration, a decision record kept during the work, a live defence, and one assessment per module where AI is genuinely unavailable.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="ladder" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Four kinds of feedback. Confusing them is the commonest failure in AI-augmented course design.</p>
+</div>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 760px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">The four kinds of feedback in the Threshold Model</caption>
+<thead>
+<tr>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg); width: 18%">Rung</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">From</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">How often</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">Answers</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 0 12px 16px; border-bottom: 1px solid var(--fg)">Graded</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F1 · Verdict</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">AI and automated tools</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Unlimited, in seconds</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Does it conform?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F2 · Interrogation</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">AI, set up to ask, never to answer</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Unlimited, in minutes</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Do you understand what you did?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--line); vertical-align: top">F3 · Deliberation</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">Peers, in the Commons</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Several per term</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top">How does this read to another mind?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">Never</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 18px 16px 18px 0; border-bottom: 1px solid var(--fg); vertical-align: top">F4 · Judgement</th><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top">The academic, at the Bench</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top; color: var(--muted)">Once or twice per module</td><td style="padding: 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top">What standard has been reached?</td><td style="padding: 18px 0 18px 16px; border-bottom: 1px solid var(--fg); vertical-align: top; font-weight: 600">Always. The only graded event</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<sc-for list="{{principles}}" as="p" hint-placeholder-count="10">
+<li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">{{p.num}}</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">{{p.title}}</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">{{p.text}}</span>
+</span>
+</li>
+</sc-for>
+</ol>
+</div>
+</section>
+
+<section id="personalisation" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Four levers move. The criteria and the grade never do.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; overflow-x: auto">
+<table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">What each personalisation lever can and cannot change</caption>
+<thead><tr>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg); width: 20%">Lever</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">Can vary</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 0 12px 16px; border-bottom: 1px solid var(--fg)">Never varies</th>
+</tr></thead>
+<tbody>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Pathway</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Cases, briefs, texts, projects and contexts</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The capability and the level demanded</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Pace</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">How much practice, over what period</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The Threshold date and the standard applied</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Practice</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Which weaknesses are targeted, at what difficulty</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The full capability set every student must evidence</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 600; padding: 16px 16px 16px 0; border-bottom: 1px solid var(--line); vertical-align: top">Provocation</th><td style="padding: 16px; border-bottom: 1px solid var(--line); vertical-align: top">Which simulations, personas and stakes a student meets</td><td style="padding: 16px 0 16px 16px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--muted)">The learning outcomes the provocation serves</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+
+<section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Judgement weighs the artefact, the student's account of it, and their answers. The balance follows the discipline.</p>
+</div>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 40px">
+<sc-for list="{{disciplines}}" as="d" hint-placeholder-count="3">
+<li style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">{{d.name}}</span>
+<div role="img" aria-label="{{d.weightLabel}}" style="display: flex; flex-direction: column; gap: 8px">
+<sc-for list="{{d.weights}}" as="w" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 12px; font-size: 14px">
+<span style="flex: 0 0 84px; color: var(--muted)">{{w.label}}</span>
+<span style="flex: 1 1 auto; height: 10px; background: var(--line); display: flex"><span style="display: block; height: 10px; background: var(--fg); width: {{w.pct}}"></span></span>
+<span style="flex: 0 0 36px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums">{{w.val}}</span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; font-size: 16px; line-height: 1.5">
+<span><strong style="font-weight: 600">Signature task.</strong> <span style="color: var(--muted)">{{d.task}}</span></span>
+<span><strong style="font-weight: 600">Answering.</strong> <span style="color: var(--muted)">{{d.answer}}</span></span>
+<span><strong style="font-weight: 600">Distinctive rule.</strong> <span style="color: var(--muted)">{{d.rule}}</span></span>
+</div>
+</li>
+</sc-for>
+</ul>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 68ch">A single institutional policy would be too permissive for law, too restrictive for EAP, and largely irrelevant to engineering.</p>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Start with one module.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Cut the graded assessments to two judgement points, and move the rest into ungraded practice and feedback.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Name the module's two to four protected difficulties, and design AI out of them.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>Write the AI tutor's instructions yourself: withhold the answer, one question at a time, hints only on evidence of effort.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span>At each judgement point, ask for a specific AI-use declaration and hold a short, unscripted conversation of 8 to 12 minutes.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>Return each judgement within ten working days with three feedforward targets, and require a written response.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It is not a workload saving.</strong> <span style="color: var(--muted)">Close to neutral in year one, modestly positive after. Marking falls; oral time is the largest new cost and has to be timetabled.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs regulations behind it.</strong> <span style="color: var(--muted)">Without an explicit ban on AI in judgement, workload pressure erodes the principle within two years.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Oral defence carries equity risk.</strong> <span style="color: var(--muted)">Give written questions at the start, thinking time and an alternative format on request, and assess substance rather than fluency (Tai et al., 2023).</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Scale changes the design.</strong> <span style="color: var(--muted)">Above about 300 students: one conversation per student per year, plus targeted ones where the artefact and account don't match.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Access must be equal.</strong> <span style="color: var(--muted)">The institution has to provide the practice environment, or the model creates two tiers of student.</span></li>
+</ul>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment redesign map</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Deciding which outcomes need a secured judgement point across the programme.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="authorship.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Authorship in the age of AI</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">What the declaration and the live conversation are evidence of.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+<sc-for list="{{refs}}" as="r" hint-placeholder-count="14">
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">{{r.a}} <em>{{r.i}}</em>{{r.b}}<sc-if value="{{r.hasDoi}}" hint-placeholder-val="{{ false }}"> doi: <a href="{{r.doiUrl}}" target="_blank" rel="noopener" class="ul-link">{{r.doi}}<span class="sr-only"> (opens in a new tab)</span></a>.</sc-if></li>
+</sc-for>
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher and library records in November 2026.</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full design document has the architecture, the teaching rhythm, staff workload, institutional conditions and templates.</p>
+<a href="threshold-model-document.html" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the design document
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">Use the Redesign Lab to apply it to one module’s feedback and assessment, or join the AI Collegium to develop it in your own practice alongside peers from other institutions.</p>
+</div>
+<a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</template>
+<script src="assets/dc-lite.js"></script>
+<script>
+const PRINCIPLES = [
+  ['Judgement is a human act, and it is signed.', 'A named person makes and can justify every judgement. AI may not generate, propose, rank, pre-mark, moderate or recommend a grade.'],
+  ['Abundance in feedback, scarcity in judgement.', 'Raise formative response by an order of magnitude and cut summative points to the minimum: four graded assessments become two judgement points and thirty-plus feedback events.'],
+  ['Personalisation adapts the route, never the standard.', 'Sequence, pace, practice, context and provocation vary. Criteria and level descriptors never do.'],
+  ['AI questions; humans answer for.', 'AI’s default register is a question. Its instructions are a designed, versioned curriculum artefact written by academics.'],
+  ['Desirable difficulty is protected.', 'Each module names its productive difficulties and designs AI out of them (Meyer and Land, 2003).'],
+  ['Talk is the primary technology.', 'AI multiplies conversations but doesn’t replace the ones that matter, and contact hours are protected (Laurillard, 2002).'],
+  ['Process is evidence, and provenance is assessable.', 'Students keep a decision record and declare AI use. Honest, extensive use isn’t penalised; misdeclaration is misconduct.'],
+  ['Every student is answerable, live, for their own work.', 'A short, unscripted conversation at every judgement point: the single highest-value change in the model.'],
+  ['No detector may be used as evidence.', 'Detectors are unreliable and biased against writers of English as an additional language. Suspicion is resolved by conversation (Liang et al., 2023).'],
+  ['Delight is designed, not incidental.', 'The sparkle layer is a first-class design object with its own share of curriculum time.']
+];
+const DISCIPLINES = [
+  { name: 'Engineering', w: [45, 25, 30], task: 'Find the buried defect in a plausible, AI-generated design package.', answer: 'A 15-minute design review with two academics and a live change of requirement.', rule: 'An unverified simulation result presented as fact counts as a professional error.' },
+  { name: 'Law', w: [35, 20, 45], task: 'Verify every authority in a fluent, partly fabricated memorandum.', answer: 'Oral advocacy or a client exercise, 12 to 20 minutes, with interventions from the bench, building on simulation-based legal education (Maharg, 2007).', rule: 'One fabricated or misdescribed authority caps the artefact mark. In Mata v. Avianca (2023), counsel filed a brief citing cases that did not exist.' },
+  { name: 'EAP', w: [30, 30, 40], task: 'AI rewrites one of the student’s paragraphs five ways; the student explains what each version does.', answer: 'A 10 to 15 minute tutorial defence of textual choices.', rule: 'The account weighs as much as the text, because the rationale is the learning outcome (Lea and Street, 1998).' }
+];
+const LABELS = ['Artefact', 'Account', 'Answering'];
+const REFS = [
+  { a: 'Boud, D. and Molloy, E. (2013) ‘Rethinking models of feedback for learning: the challenge of design’,', i: 'Assessment & Evaluation in Higher Education', b: ', 38(6), pp. 698–712.' },
+  { a: 'Carless, D. and Boud, D. (2018) ‘The development of student feedback literacy: enabling uptake of feedback’,', i: 'Assessment & Evaluation in Higher Education', b: ', 43(8), pp. 1315–1325.' },
+  { a: 'Laurillard, D. (2002)', i: 'Rethinking university teaching: a conversational framework for the effective use of learning technologies', b: '. 2nd edn. London: RoutledgeFalmer.' },
+  { a: 'Lea, M.R. and Street, B.V. (1998) ‘Student writing in higher education: an academic literacies approach’,', i: 'Studies in Higher Education', b: ', 23(2), pp. 157–172.', doi: '10.1080/03075079812331380364' },
+  { a: 'Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’,', i: 'Patterns', b: ', 4(7), article 100779.', doi: '10.1016/j.patter.2023.100779' },
+  { a: 'Maharg, P. (2007)', i: 'Transforming legal education: learning and teaching the law in the early twenty-first century', b: '. Aldershot: Ashgate.' },
+  { a: '', i: 'Mata v. Avianca, Inc.', b: ' (2023) 678 F. Supp. 3d 443 (S.D.N.Y.).' },
+  { a: 'Meyer, J.H.F. and Land, R. (2003)', i: 'Threshold concepts and troublesome knowledge: linkages to ways of thinking and practising within the disciplines', b: '. ETL Project Occasional Report 4. Edinburgh: University of Edinburgh.' },
+  { a: 'Nicol, D. (2021) ‘The power of internal feedback: exploiting natural comparison processes’,', i: 'Assessment & Evaluation in Higher Education', b: ', 46(5), pp. 756–778.' },
+  { a: 'Sadler, D.R. (1989) ‘Formative assessment and the design of instructional systems’,', i: 'Instructional Science', b: ', 18(2), pp. 119–144.' },
+  { a: 'Tai, J., Ajjawi, R., Bearman, M., Boud, D., Dawson, P. and Jorre de St Jorre, T. (2023) ‘Assessment for inclusion: rethinking contemporary strategies in assessment design’,', i: 'Higher Education Research & Development', b: ', 42(2), pp. 483–497.', doi: '10.1080/07294360.2022.2057451' }
+];
+class Component extends DCLogic {
+renderVals() {
+const s = this.state || {};
+let stored = null; try { stored = localStorage.getItem('aiforhe-theme'); } catch (e) {}
+const dark = typeof s.dark === 'boolean' ? s.dark : (stored ? stored === 'dark' : (this.props.theme ?? 'light') === 'dark');
+return {
+  dark: dark,
+  light: !dark,
+  bg: dark ? '#000000' : '#FFFFFF',
+  fg: dark ? '#FFFFFF' : '#000000',
+  muted: dark ? '#A3A3A3' : '#5E5E5E',
+  mutedInv: dark ? '#5E5E5E' : '#A3A3A3',
+  line: dark ? '#333333' : '#DADADA',
+  ring: dark ? '#7A7A7A' : '#8A8A8A',
+  toggleLabel: dark ? 'Switch to light mode' : 'Switch to dark mode',
+  toggle: () => { try { localStorage.setItem('aiforhe-theme', dark ? 'light' : 'dark'); } catch (e) {} this.setState({ dark: !dark }); },
+  principles: PRINCIPLES.map((p, i) => ({ num: String(i + 1).padStart(2, '0'), title: p[0], text: p[1] })),
+  disciplines: DISCIPLINES.map((d) => ({
+    name: d.name, task: d.task, answer: d.answer, rule: d.rule,
+    weightLabel: d.name + ' weighting: artefact ' + d.w[0] + '%, account ' + d.w[1] + '%, answering ' + d.w[2] + '%',
+    weights: d.w.map((v, i) => ({ label: LABELS[i], val: v + '%', pct: v + '%' }))
+  })),
+  refs: REFS.map((r) => ({ a: r.a, i: r.i, b: r.b, hasDoi: !!r.doi, doi: r.doi || '', doiUrl: r.doi ? 'https://doi.org/' + r.doi : '' }))
+};
+}
+}
+dcMount(Component, {"theme": "light"});
+</script>
+</body>
+</html>

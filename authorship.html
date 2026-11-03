@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for HE — Authorship in the age of AI</title>
+<meta name="description" content="A working definition of authorship for assessment, and eight principles for designing around it.">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+button{font:inherit}
+.navlink{text-decoration:none;text-underline-offset:6px}
+.navlink:hover{text-decoration:underline}
+.ul-link{text-decoration:underline;text-underline-offset:5px}
+.row .name{text-underline-offset:5px}
+.row:hover .name{text-decoration:underline}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-80px;z-index:10}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
+</head>
+<body>
+<div id="dc-app">
+<div id="top" style="--bg: #FFFFFF; --fg: #000000; --muted: #5E5E5E; --line: #DADADA; --ring: #8A8A8A; --muted-inv: #A3A3A3; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Authorship</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">Authorship in the age of AI</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">Authorship in the age of AI</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 54ch; text-wrap: pretty">A working definition of authorship for assessment, and eight principles for designing around it.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Authorship</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Task, module and programme</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#definition" class="navlink" style="font-size: 15px; padding: 12px 0">The definition</a>
+<a href="#principles" class="navlink" style="font-size: 15px; padding: 12px 0">Eight principles</a>
+<a href="#disciplines" class="navlink" style="font-size: 15px; padding: 12px 0">Across the disciplines</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">What counts as a student's own work now, and how do I explain it?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">The difficulty is less technological than conceptual. Scholarly publishing has already settled it: an author is someone who can answer for the work (ICMJE, 2025; COPE, 2023). This framework brings that standard into student assessment.</p>
+</div>
+</div>
+</section>
+
+<section id="definition" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The definition</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<blockquote style="margin: 0; padding: clamp(24px, 3vw, 36px); background: var(--fg); color: var(--bg); font-size: clamp(20px, 2vw, 25px); line-height: 1.45; letter-spacing: -0.01em; font-weight: 500">For the purpose of student assessment, authorship is accountable, reflective and dialogic meaning-making: the student's demonstrable capacity to take responsibility for, explain and defend the meaning of their work, including any use of AI, within the conventions of their discipline.</blockquote>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px 32px">
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Accountable</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The author can explain, defend and correct the work, and answer for its claims. It's not about who typed the words.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Dialogic</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Writing has always woven in other people's words (Bakhtin, 1981). AI is one more voice. The author shapes borrowed material on purpose, and answers for it.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Reflective</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Judgement can't be seen in a finished product, but it shows in process and dialogue. The capability to build is evaluative judgement (Tai et al., 2018).</span>
+</li>
+</ul>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px 32px; border-top: 1px solid var(--line); padding-top: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 14px; color: var(--muted)">The rule to teach</span>
+<span style="font-size: 19px; font-weight: 500; line-height: 1.4">You may hand over control, but you may not hand over responsibility.</span>
+<span style="font-size: 14px; color: var(--muted)">After Eaton (2023) and Bearman and Ajjawi (2023)</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 14px; color: var(--muted)">The question to ask of any task</span>
+<span style="font-size: 19px; font-weight: 500; line-height: 1.4">In this genre, where does the author's accountable judgement reside?</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Eight principles</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">For teachers and course designers.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">01</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Design for authorship. Don’t try to detect it.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Detector output is at most a prompt for a conversation, never evidence of misconduct (Weber-Wulff et al., 2023; Liang et al., 2023).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">02</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Make accountability the standard.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Students stand behind their meaning, orally or in writing. They may hand over control, but not responsibility (Eaton, 2023; Bearman and Ajjawi, 2023).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">03</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Use a two-lane, programme-level design.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">A few secured points such as vivas, interactive orals and supervised tasks. Most tasks open and rich in process (Bridgeman, Liu and Weeks, 2024; Dawson, 2021).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">04</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Set permitted AI use per task, and teach disclosure.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Use a shared scale, and treat honest, specific AI-use statements as part of the work (Perkins et al., 2024; Roe, Perkins and Tregubova, 2024).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">05</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Assess process and judgement, not only product.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Commentaries, annotated drafts, portfolios, vivas and interactive orals. Ask whether the task makes the student answer for the work (Tai et al., 2018; Sotiriadou et al., 2020).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">06</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Teach source use and voice, and treat AI as one more voice.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Fold AI into existing teaching on citation, paraphrase, stance and voice, with students marking what it contributed (Hyland, 2005; Pecorari, 2003; Ivanič, 1998).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">07</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Lead with equity.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Test every design for whom it disadvantages. Keep secured assessment small, provide tools institutionally, and protect multilingual students (Liang et al., 2023; Warschauer et al., 2023).</span>
+</span>
+</li>
+
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">08</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Embed, don’t bolt on.</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Authorship teaching belongs inside disciplinary curricula, built in partnership between academic literacies practitioners and discipline staff.</span>
+</span>
+</li>
+
+</ol>
+</div>
+</section>
+
+<section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Across the disciplines</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Where accountable judgement lives in nine common genres.</p>
+</div>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Natural sciences</span>
+<span style="font-size: 14px; color: var(--muted)">Laboratory report</span>
+<span style="font-size: 16px; line-height: 1.5">Weight interpretation, error analysis and reasoning from this experiment’s data. A short oral account of an unexpected result is the secured check.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Engineering</span>
+<span style="font-size: 14px; color: var(--muted)">Design report</span>
+<span style="font-size: 16px; line-height: 1.5">Assess the justification of design choices and trade-offs, defended at a design review. AI may suggest alternatives; the student explains why theirs won.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Computing</span>
+<span style="font-size: 14px; color: var(--muted)">Code</span>
+<span style="font-size: 16px; line-height: 1.5">Evidence understanding, not production: explain, modify and debug live. Code walkthroughs and vivas are the secured checks (Prather et al., 2024).</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Law</span>
+<span style="font-size: 14px; color: var(--muted)">Legal reasoning and writing</span>
+<span style="font-size: 16px; line-height: 1.5">Apply law to new facts and defend the reasoning orally, as in a moot. AI research is allowed only if every authority is verified and disclosed.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Medicine and health</span>
+<span style="font-size: 14px; color: var(--muted)">Reflection and case write-up</span>
+<span style="font-size: 16px; line-height: 1.5">Weight clinical reasoning and reflection on the specific encounter, ideally discussed with a supervisor who was there.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Humanities</span>
+<span style="font-size: 14px; color: var(--muted)">Essay and close reading</span>
+<span style="font-size: 16px; line-height: 1.5">Close reading of set passages, writing linked to seminars, and a voice that can be traced across drafts. AI can be an opponent to argue against.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Social sciences</span>
+<span style="font-size: 14px; color: var(--muted)">Research report</span>
+<span style="font-size: 16px; line-height: 1.5">Weight the student’s own analysis of the data. AI may map literature if the student shows what it got wrong or missed.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Creative arts and design</span>
+<span style="font-size: 14px; color: var(--muted)">Portfolio and process</span>
+<span style="font-size: 16px; line-height: 1.5">The portfolio, documented process and artist’s statement already evidence authorship. AI is one medium among others, disclosed.</span>
+</li>
+
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Business and management</span>
+<span style="font-size: 14px; color: var(--muted)">Report and case analysis</span>
+<span style="font-size: 16px; line-height: 1.5">Use live, local or bespoke cases, defended in a presentation with questions as the secured element.</span>
+</li>
+
+</ul>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">One task. Five decisions.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Ask where, in this genre, the student's accountable judgement lives. That's what to assess.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Set the permitted AI use for this task, using a shared scale, and tell students why.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>Teach students to write a specific AI-use statement, and treat it as part of the work, not a confession.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span>Add one moment where the student answers for the work: a short oral explanation, an annotated draft or a reflective commentary.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>Ask who this design disadvantages, and adjust until the answer is acceptable.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The fixes carry their own risks.</strong> <span style="color: var(--muted)">Too many invigilated exams narrow what's assessed. Surveillance erodes trust. Process evidence adds workload and penalises non-linear writers. Orals can disadvantage anxious, multilingual and disabled students.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The evidence on disclosure is thin.</strong> <span style="color: var(--muted)">AI-use statements can turn into a compliance ritual unless they're taught and valued.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Open use could widen gaps.</strong> <span style="color: var(--muted)">Some groups use AI far more than others (Freeman, 2025). Without teaching and institutionally provided tools, open tasks could widen attainment gaps.</span></li>
+</ul>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600; letter-spacing: -0.015em">What would change this position</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: var(--muted); max-width: 64ch">The position should be revisited if any of these is shown. None has been reached so far.</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">Detectors are independently shown to have low false-positive rates, with no demographic bias.</li>
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">AI-use statements are shown to be systematically gamed in ways teaching can't fix.</li>
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">Open use is shown to widen attainment gaps even with provided tools and teaching.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment redesign map</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Where to place the secured points that principle 3 calls for.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="threshold-model.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">The Threshold Model</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">How declaration, provenance and a live conversation fit into one module.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://arxiv.org/abs/2412.09029" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">AI Assessment Scale</span><span style="font-size: 14px; color: var(--muted)">Sector · Perkins, Furze, Roe &amp; MacVaugh</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">A shared scale for setting permitted use task by task (principle 4).</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bakhtin, M.M. (1981) <em>The dialogic imagination: four essays</em>. Edited by M. Holquist. Translated by C. Emerson and M. Holquist. Austin: University of Texas Press.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bearman, M. and Ajjawi, R. (2023) ‘Learning to work with the black box: pedagogy for a world with artificial intelligence’, <em>British Journal of Educational Technology</em>, 54(5), pp. 1160–1173. doi: <a href="https://doi.org/10.1111/bjet.13337" target="_blank" rel="noopener" class="ul-link">10.1111/bjet.13337<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bridgeman, A., Liu, D. and Weeks, R. (2024) <em>Program level assessment design and the two-lane approach</em>. Teaching@Sydney, University of Sydney. Available at: <a href="https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/" target="_blank" rel="noopener" class="ul-link">https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 3 September 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Committee on Publication Ethics (2023) <em>Authorship and AI tools: COPE position statement</em>. Available at: <a href="https://publicationethics.org/cope-position-statements/ai-author" target="_blank" rel="noopener" class="ul-link">https://publicationethics.org/cope-position-statements/ai-author<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 3 September 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Dawson, P. (2021) <em>Defending assessment security in a digital world: preventing e-cheating and supporting academic integrity in higher education</em>. London: Routledge. doi: <a href="https://doi.org/10.4324/9780429324178" target="_blank" rel="noopener" class="ul-link">10.4324/9780429324178<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Eaton, S.E. (2023) ‘Postplagiarism: transdisciplinary ethics and integrity in the age of artificial intelligence and neurotechnology’, <em>International Journal for Educational Integrity</em>, 19, article 23. doi: <a href="https://doi.org/10.1007/s40979-023-00144-1" target="_blank" rel="noopener" class="ul-link">10.1007/s40979-023-00144-1<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Freeman, J. (2025) <em>Student generative AI survey 2025</em>. HEPI Policy Note 61. Oxford: Higher Education Policy Institute and Kortext. Available at: <a href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2025/" target="_blank" rel="noopener" class="ul-link">https://www.hepi.ac.uk/reports/student-generative-ai-survey-2025/<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 3 September 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Hyland, K. (2005) ‘Stance and engagement: a model of interaction in academic discourse’, <em>Discourse Studies</em>, 7(2), pp. 173–192. doi: <a href="https://doi.org/10.1177/1461445605050365" target="_blank" rel="noopener" class="ul-link">10.1177/1461445605050365<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">International Committee of Medical Journal Editors (2025) <em>Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals</em>. Available at: <a href="https://www.icmje.org/icmje-recommendations.pdf" target="_blank" rel="noopener" class="ul-link">https://www.icmje.org/icmje-recommendations.pdf<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 3 September 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Ivanič, R. (1998) <em>Writing and identity: the discoursal construction of identity in academic writing</em>. Amsterdam: John Benjamins.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’, <em>Patterns</em>, 4(7), article 100779. doi: <a href="https://doi.org/10.1016/j.patter.2023.100779" target="_blank" rel="noopener" class="ul-link">10.1016/j.patter.2023.100779<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Pecorari, D. (2003) ‘Good and original: plagiarism and patchwriting in academic second-language writing’, <em>Journal of Second Language Writing</em>, 12(4), pp. 317–345. doi: <a href="https://doi.org/10.1016/j.jslw.2003.08.004" target="_blank" rel="noopener" class="ul-link">10.1016/j.jslw.2003.08.004<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Perkins, M., Furze, L., Roe, J. and MacVaugh, J. (2024) ‘The Artificial Intelligence Assessment Scale (AIAS): a framework for ethical integration of generative AI in educational assessment’, <em>Journal of University Teaching &amp; Learning Practice</em>, 21(6), pp. 49–66. doi: <a href="https://doi.org/10.53761/q3azde36" target="_blank" rel="noopener" class="ul-link">10.53761/q3azde36<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Prather, J., Reeves, B.N., Leinonen, J., MacNeil, S., Randrianasolo, A.S., Becker, B.A., Kimmel, B., Wright, J. and Briggs, B. (2024) ‘The widening gap: the benefits and harms of generative AI for novice programmers’, in <em>Proceedings of the 2024 ACM Conference on International Computing Education Research</em>, vol. 1, pp. 469–486. doi: <a href="https://doi.org/10.1145/3632620.3671116" target="_blank" rel="noopener" class="ul-link">10.1145/3632620.3671116<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Roe, J., Perkins, M. and Tregubova, Y. (2024) <em>The EAP-AIAS: adapting the AI Assessment Scale for English for academic purposes</em>. arXiv preprint arXiv:2408.01075. doi: <a href="https://doi.org/10.48550/arXiv.2408.01075" target="_blank" rel="noopener" class="ul-link">10.48550/arXiv.2408.01075<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Sotiriadou, P., Logan, D., Daly, A. and Guest, R. (2020) ‘The role of authentic assessment to preserve academic integrity and promote skill development and employability’, <em>Studies in Higher Education</em>, 45(11), pp. 2132–2148. doi: <a href="https://doi.org/10.1080/03075079.2019.1582015" target="_blank" rel="noopener" class="ul-link">10.1080/03075079.2019.1582015<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Tai, J., Ajjawi, R., Boud, D., Dawson, P. and Panadero, E. (2018) ‘Developing evaluative judgement: enabling students to make decisions about the quality of work’, <em>Higher Education</em>, 76(3), pp. 467–481. doi: <a href="https://doi.org/10.1007/s10734-017-0220-3" target="_blank" rel="noopener" class="ul-link">10.1007/s10734-017-0220-3<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Warschauer, M., Tseng, W., Yim, S., Webster, T., Jacob, S., Du, Q. and Tate, T. (2023) ‘The affordances and contradictions of AI-generated text for writers of English as a second or foreign language’, <em>Journal of Second Language Writing</em>, 62, article 101071. doi: <a href="https://doi.org/10.1016/j.jslw.2023.101071" target="_blank" rel="noopener" class="ul-link">10.1016/j.jslw.2023.101071<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O., Šigut, P. and Waddington, L. (2023) ‘Testing of detection tools for AI-generated text’, <em>International Journal for Educational Integrity</em>, 19, article 26. doi: <a href="https://doi.org/10.1007/s40979-023-00146-z" target="_blank" rel="noopener" class="ul-link">10.1007/s40979-023-00146-z<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher and official records. The Sydney two-lane document is an institutional practice paper rather than peer-reviewed research, and the EAP-AIAS is a preprint.</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full position paper has the theory, the policy landscape and the evidence behind each principle.</p>
+<a href="authorship-paper.html" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the position paper
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build a shared position on authorship</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops give a team a shared position on AI, a practical design framework, and at least one artefact applied to its own modules.</p>
+</div>
+<a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</div>
+<template id="dc-template">
+<div id="top" style="--bg: {{bg}}; --fg: {{fg}}; --muted: {{muted}}; --line: {{line}}; --ring: {{ring}}; --muted-inv: {{mutedInv}}; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+<sc-if value="{{light}}" hint-placeholder-val="{{ true }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+</sc-if>
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Authorship</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">Authorship in the age of AI</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">Authorship in the age of AI</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 54ch; text-wrap: pretty">A working definition of authorship for assessment, and eight principles for designing around it.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Authorship</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Task, module and programme</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#definition" class="navlink" style="font-size: 15px; padding: 12px 0">The definition</a>
+<a href="#principles" class="navlink" style="font-size: 15px; padding: 12px 0">Eight principles</a>
+<a href="#disciplines" class="navlink" style="font-size: 15px; padding: 12px 0">Across the disciplines</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">What counts as a student's own work now, and how do I explain it?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">The difficulty is less technological than conceptual. Scholarly publishing has already settled it: an author is someone who can answer for the work (ICMJE, 2025; COPE, 2023). This framework brings that standard into student assessment.</p>
+</div>
+</div>
+</section>
+
+<section id="definition" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The definition</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<blockquote style="margin: 0; padding: clamp(24px, 3vw, 36px); background: var(--fg); color: var(--bg); font-size: clamp(20px, 2vw, 25px); line-height: 1.45; letter-spacing: -0.01em; font-weight: 500">For the purpose of student assessment, authorship is accountable, reflective and dialogic meaning-making: the student's demonstrable capacity to take responsibility for, explain and defend the meaning of their work, including any use of AI, within the conventions of their discipline.</blockquote>
+<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 24px 32px">
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Accountable</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">The author can explain, defend and correct the work, and answer for its claims. It's not about who typed the words.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Dialogic</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Writing has always woven in other people's words (Bakhtin, 1981). AI is one more voice. The author shapes borrowed material on purpose, and answers for it.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Reflective</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Judgement can't be seen in a finished product, but it shows in process and dialogue. The capability to build is evaluative judgement (Tai et al., 2018).</span>
+</li>
+</ul>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 16px 32px; border-top: 1px solid var(--line); padding-top: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 14px; color: var(--muted)">The rule to teach</span>
+<span style="font-size: 19px; font-weight: 500; line-height: 1.4">You may hand over control, but you may not hand over responsibility.</span>
+<span style="font-size: 14px; color: var(--muted)">After Eaton (2023) and Bearman and Ajjawi (2023)</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 14px; color: var(--muted)">The question to ask of any task</span>
+<span style="font-size: 19px; font-weight: 500; line-height: 1.4">In this genre, where does the author's accountable judgement reside?</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Eight principles</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">For teachers and course designers.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<sc-for list="{{principles}}" as="p" hint-placeholder-count="8">
+<li style="display: flex; gap: 20px; padding: 22px 0; border-bottom: 1px solid var(--line)">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">{{p.num}}</span>
+<span style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+<span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">{{p.title}}</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">{{p.text}}</span>
+</span>
+</li>
+</sc-for>
+</ol>
+</div>
+</section>
+
+<section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Across the disciplines</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Where accountable judgement lives in nine common genres.</p>
+</div>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<sc-for list="{{disciplines}}" as="d" hint-placeholder-count="9">
+<li style="background: var(--bg); padding: 22px 20px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">{{d.name}}</span>
+<span style="font-size: 14px; color: var(--muted)">{{d.genre}}</span>
+<span style="font-size: 16px; line-height: 1.5">{{d.text}}</span>
+</li>
+</sc-for>
+</ul>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">One task. Five decisions.</p>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Ask where, in this genre, the student's accountable judgement lives. That's what to assess.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Set the permitted AI use for this task, using a shared scale, and tell students why.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>Teach students to write a specific AI-use statement, and treat it as part of the work, not a confession.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span>Add one moment where the student answers for the work: a short oral explanation, an annotated draft or a reflective commentary.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>Ask who this design disadvantages, and adjust until the answer is acceptable.</span></li>
+</ol>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The fixes carry their own risks.</strong> <span style="color: var(--muted)">Too many invigilated exams narrow what's assessed. Surveillance erodes trust. Process evidence adds workload and penalises non-linear writers. Orals can disadvantage anxious, multilingual and disabled students.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The evidence on disclosure is thin.</strong> <span style="color: var(--muted)">AI-use statements can turn into a compliance ritual unless they're taught and valued.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Open use could widen gaps.</strong> <span style="color: var(--muted)">Some groups use AI far more than others (Freeman, 2025). Without teaching and institutionally provided tools, open tasks could widen attainment gaps.</span></li>
+</ul>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600; letter-spacing: -0.015em">What would change this position</h3>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: var(--muted); max-width: 64ch">The position should be revisited if any of these is shown. None has been reached so far.</p>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">Detectors are independently shown to have low false-positive rates, with no demographic bias.</li>
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">AI-use statements are shown to be systematically gamed in ways teaching can't fix.</li>
+<li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55">Open use is shown to widen attainment gaps even with provided tools and teaching.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment redesign map</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Where to place the secured points that principle 3 calls for.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="threshold-model.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">The Threshold Model</span><span style="font-size: 14px; color: var(--muted)">AI for HE</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">How declaration, provenance and a live conversation fit into one module.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://arxiv.org/abs/2412.09029" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">AI Assessment Scale</span><span style="font-size: 14px; color: var(--muted)">Sector · Perkins, Furze, Roe &amp; MacVaugh</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">A shared scale for setting permitted use task by task (principle 4).</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+<sc-for list="{{refs}}" as="r" hint-placeholder-count="20">
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">{{r.a}} <em>{{r.i}}</em>{{r.b}}<sc-if value="{{r.hasDoi}}" hint-placeholder-val="{{ false }}"> doi: <a href="{{r.doiUrl}}" target="_blank" rel="noopener" class="ul-link">{{r.doi}}<span class="sr-only"> (opens in a new tab)</span></a>.</sc-if><sc-if value="{{r.hasLink}}" hint-placeholder-val="{{ false }}"> Available at: <a href="{{r.link}}" target="_blank" rel="noopener" class="ul-link">{{r.link}}<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: {{r.acc}}).</sc-if></li>
+</sc-for>
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher and official records. The Sydney two-lane document is an institutional practice paper rather than peer-reviewed research, and the EAP-AIAS is a preprint.</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full position paper has the theory, the policy landscape and the evidence behind each principle.</p>
+<a href="authorship-paper.html" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the position paper
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build a shared position on authorship</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops give a team a shared position on AI, a practical design framework, and at least one artefact applied to its own modules.</p>
+</div>
+<a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</template>
+<script src="assets/dc-lite.js"></script>
+<script>
+const PRINCIPLES = [
+  ['Design for authorship. Don’t try to detect it.', 'Detector output is at most a prompt for a conversation, never evidence of misconduct (Weber-Wulff et al., 2023; Liang et al., 2023).'],
+  ['Make accountability the standard.', 'Students stand behind their meaning, orally or in writing. They may hand over control, but not responsibility (Eaton, 2023; Bearman and Ajjawi, 2023).'],
+  ['Use a two-lane, programme-level design.', 'A few secured points such as vivas, interactive orals and supervised tasks. Most tasks open and rich in process (Bridgeman, Liu and Weeks, 2024; Dawson, 2021).'],
+  ['Set permitted AI use per task, and teach disclosure.', 'Use a shared scale, and treat honest, specific AI-use statements as part of the work (Perkins et al., 2024; Roe, Perkins and Tregubova, 2024).'],
+  ['Assess process and judgement, not only product.', 'Commentaries, annotated drafts, portfolios, vivas and interactive orals. Ask whether the task makes the student answer for the work (Tai et al., 2018; Sotiriadou et al., 2020).'],
+  ['Teach source use and voice, and treat AI as one more voice.', 'Fold AI into existing teaching on citation, paraphrase, stance and voice, with students marking what it contributed (Hyland, 2005; Pecorari, 2003; Ivanič, 1998).'],
+  ['Lead with equity.', 'Test every design for whom it disadvantages. Keep secured assessment small, provide tools institutionally, and protect multilingual students (Liang et al., 2023; Warschauer et al., 2023).'],
+  ['Embed, don’t bolt on.', 'Authorship teaching belongs inside disciplinary curricula, built in partnership between academic literacies practitioners and discipline staff.']
+];
+const DISCIPLINES = [
+  ['Natural sciences', 'Laboratory report', 'Weight interpretation, error analysis and reasoning from this experiment’s data. A short oral account of an unexpected result is the secured check.'],
+  ['Engineering', 'Design report', 'Assess the justification of design choices and trade-offs, defended at a design review. AI may suggest alternatives; the student explains why theirs won.'],
+  ['Computing', 'Code', 'Evidence understanding, not production: explain, modify and debug live. Code walkthroughs and vivas are the secured checks (Prather et al., 2024).'],
+  ['Law', 'Legal reasoning and writing', 'Apply law to new facts and defend the reasoning orally, as in a moot. AI research is allowed only if every authority is verified and disclosed.'],
+  ['Medicine and health', 'Reflection and case write-up', 'Weight clinical reasoning and reflection on the specific encounter, ideally discussed with a supervisor who was there.'],
+  ['Humanities', 'Essay and close reading', 'Close reading of set passages, writing linked to seminars, and a voice that can be traced across drafts. AI can be an opponent to argue against.'],
+  ['Social sciences', 'Research report', 'Weight the student’s own analysis of the data. AI may map literature if the student shows what it got wrong or missed.'],
+  ['Creative arts and design', 'Portfolio and process', 'The portfolio, documented process and artist’s statement already evidence authorship. AI is one medium among others, disclosed.'],
+  ['Business and management', 'Report and case analysis', 'Use live, local or bespoke cases, defended in a presentation with questions as the secured element.']
+];
+const REFS = [
+  { a: 'Bakhtin, M.M. (1981)', i: 'The dialogic imagination: four essays', b: '. Edited by M. Holquist. Translated by C. Emerson and M. Holquist. Austin: University of Texas Press.' },
+  { a: 'Bearman, M. and Ajjawi, R. (2023) ‘Learning to work with the black box: pedagogy for a world with artificial intelligence’,', i: 'British Journal of Educational Technology', b: ', 54(5), pp. 1160–1173.', doi: '10.1111/bjet.13337' },
+  { a: 'Bridgeman, A., Liu, D. and Weeks, R. (2024)', i: 'Program level assessment design and the two-lane approach', b: '. Teaching@Sydney, University of Sydney.', link: 'https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/', acc: '3 September 2026' },
+  { a: 'Committee on Publication Ethics (2023)', i: 'Authorship and AI tools: COPE position statement', b: '.', link: 'https://publicationethics.org/cope-position-statements/ai-author', acc: '3 September 2026' },
+  { a: 'Dawson, P. (2021)', i: 'Defending assessment security in a digital world: preventing e-cheating and supporting academic integrity in higher education', b: '. London: Routledge.', doi: '10.4324/9780429324178' },
+  { a: 'Eaton, S.E. (2023) ‘Postplagiarism: transdisciplinary ethics and integrity in the age of artificial intelligence and neurotechnology’,', i: 'International Journal for Educational Integrity', b: ', 19, article 23.', doi: '10.1007/s40979-023-00144-1' },
+  { a: 'Freeman, J. (2025)', i: 'Student generative AI survey 2025', b: '. HEPI Policy Note 61. Oxford: Higher Education Policy Institute and Kortext.', link: 'https://www.hepi.ac.uk/reports/student-generative-ai-survey-2025/', acc: '3 September 2026' },
+  { a: 'Hyland, K. (2005) ‘Stance and engagement: a model of interaction in academic discourse’,', i: 'Discourse Studies', b: ', 7(2), pp. 173–192.', doi: '10.1177/1461445605050365' },
+  { a: 'International Committee of Medical Journal Editors (2025)', i: 'Recommendations for the conduct, reporting, editing, and publication of scholarly work in medical journals', b: '.', link: 'https://www.icmje.org/icmje-recommendations.pdf', acc: '3 September 2026' },
+  { a: 'Ivanič, R. (1998)', i: 'Writing and identity: the discoursal construction of identity in academic writing', b: '. Amsterdam: John Benjamins.' },
+  { a: 'Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’,', i: 'Patterns', b: ', 4(7), article 100779.', doi: '10.1016/j.patter.2023.100779' },
+  { a: 'Pecorari, D. (2003) ‘Good and original: plagiarism and patchwriting in academic second-language writing’,', i: 'Journal of Second Language Writing', b: ', 12(4), pp. 317–345.', doi: '10.1016/j.jslw.2003.08.004' },
+  { a: 'Perkins, M., Furze, L., Roe, J. and MacVaugh, J. (2024) ‘The Artificial Intelligence Assessment Scale (AIAS): a framework for ethical integration of generative AI in educational assessment’,', i: 'Journal of University Teaching & Learning Practice', b: ', 21(6), pp. 49–66.', doi: '10.53761/q3azde36' },
+  { a: 'Prather, J., Reeves, B.N., Leinonen, J., MacNeil, S., Randrianasolo, A.S., Becker, B.A., Kimmel, B., Wright, J. and Briggs, B. (2024) ‘The widening gap: the benefits and harms of generative AI for novice programmers’, in', i: 'Proceedings of the 2024 ACM Conference on International Computing Education Research', b: ', vol. 1, pp. 469–486.', doi: '10.1145/3632620.3671116' },
+  { a: 'Roe, J., Perkins, M. and Tregubova, Y. (2024)', i: 'The EAP-AIAS: adapting the AI Assessment Scale for English for academic purposes', b: '. arXiv preprint arXiv:2408.01075.', doi: '10.48550/arXiv.2408.01075' },
+  { a: 'Sotiriadou, P., Logan, D., Daly, A. and Guest, R. (2020) ‘The role of authentic assessment to preserve academic integrity and promote skill development and employability’,', i: 'Studies in Higher Education', b: ', 45(11), pp. 2132–2148.', doi: '10.1080/03075079.2019.1582015' },
+  { a: 'Tai, J., Ajjawi, R., Boud, D., Dawson, P. and Panadero, E. (2018) ‘Developing evaluative judgement: enabling students to make decisions about the quality of work’,', i: 'Higher Education', b: ', 76(3), pp. 467–481.', doi: '10.1007/s10734-017-0220-3' },
+  { a: 'Warschauer, M., Tseng, W., Yim, S., Webster, T., Jacob, S., Du, Q. and Tate, T. (2023) ‘The affordances and contradictions of AI-generated text for writers of English as a second or foreign language’,', i: 'Journal of Second Language Writing', b: ', 62, article 101071.', doi: '10.1016/j.jslw.2023.101071' },
+  { a: 'Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O., Šigut, P. and Waddington, L. (2023) ‘Testing of detection tools for AI-generated text’,', i: 'International Journal for Educational Integrity', b: ', 19, article 26.', doi: '10.1007/s40979-023-00146-z' }
+];
+class Component extends DCLogic {
+renderVals() {
+const s = this.state || {};
+let stored = null; try { stored = localStorage.getItem('aiforhe-theme'); } catch (e) {}
+const dark = typeof s.dark === 'boolean' ? s.dark : (stored ? stored === 'dark' : (this.props.theme ?? 'light') === 'dark');
+return {
+  dark: dark,
+  light: !dark,
+  bg: dark ? '#000000' : '#FFFFFF',
+  fg: dark ? '#FFFFFF' : '#000000',
+  muted: dark ? '#A3A3A3' : '#5E5E5E',
+  mutedInv: dark ? '#5E5E5E' : '#A3A3A3',
+  line: dark ? '#333333' : '#DADADA',
+  ring: dark ? '#7A7A7A' : '#8A8A8A',
+  toggleLabel: dark ? 'Switch to light mode' : 'Switch to dark mode',
+  toggle: () => { try { localStorage.setItem('aiforhe-theme', dark ? 'light' : 'dark'); } catch (e) {} this.setState({ dark: !dark }); },
+  principles: PRINCIPLES.map((p, i) => ({ num: String(i + 1).padStart(2, '0'), title: p[0], text: p[1] })),
+  disciplines: DISCIPLINES.map((d) => ({ name: d[0], genre: d[1], text: d[2] })),
+  refs: REFS.map((r) => ({ a: r.a, i: r.i, b: r.b, hasDoi: !!r.doi, doi: r.doi || '', doiUrl: r.doi ? 'https://doi.org/' + r.doi : '', hasLink: !!r.link, link: r.link || '', acc: r.acc || '' }))
+};
+}
+}
+dcMount(Component, {"theme": "light"});
+</script>
+</body>
+</html>

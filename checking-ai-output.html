@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for HE — Checking AI output: a one-page guide for students</title>
+<meta name="description" content="AI tools write fluently and are often right. This page shows you how to check when they’re not, and when not to use them at all.">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+button{font:inherit}
+.navlink{text-decoration:none;text-underline-offset:6px}
+.navlink:hover{text-decoration:underline}
+.ul-link{text-decoration:underline;text-underline-offset:5px}
+details > summary{list-style:none;cursor:pointer}
+details > summary::-webkit-details-marker{display:none}
+details .chev{transition:transform 180ms ease}
+details[open] .chev{transform:rotate(45deg)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-80px;z-index:10}
+.skip:focus{top:16px}
+.tbl{border-collapse:collapse;width:100%;min-width:560px;font-size:15px;line-height:1.5}
+.tbl caption{text-align:left;font-size:14px;color:var(--muted);padding-bottom:10px}
+.tbl th{text-align:left;font-weight:600;padding:10px 14px 10px 0;border-bottom:1px solid var(--fg);vertical-align:bottom}
+.tbl td{padding:12px 14px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media print{header,footer,.noprint{display:none!important}}
+</style>
+</head>
+<body>
+<div id="dc-app">
+<div id="top" style="--bg: #FFFFFF; --fg: #000000; --muted: #5E5E5E; --line: #DADADA; --ring: #8A8A8A; --muted-inv: #A3A3A3; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" aria-current="page" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+
+</button>
+</div>
+</div>
+</header>
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+<section style="padding: clamp(40px, 6vw, 80px) 0 clamp(36px, 4vw, 56px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(38px, 5.6vw, 72px); line-height: 1.03; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">Checking AI output: a one-page guide for students</h1>
+<p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 62ch; text-wrap: pretty">AI tools write fluently and are often right. This page shows you how to check when they’re not, and when not to use them at all.</p>
+<dl style="margin: 8px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">For</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">Students at any level (print and share)</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">You’ll get</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">A checking routine and a checklist to copy</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">Time</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">4-minute read</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">Last reviewed</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">November 2026</dd></div></dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Fluent is not the same as true</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0; font-size: 17px; line-height: 1.65">AI chatbots produce text by predicting likely words from patterns in their training data. So the writing is smooth and confident whether or not it is correct. A wrong answer reads exactly like a right one. How it sounds tells you nothing about whether it’s true.</p><p style="margin: 0; font-size: 17px; line-height: 1.65">Tools that search the web make fewer obvious errors, but they can still misreport what a source says. A real reference attached to a claim it doesn’t support is harder to spot than a fake one. Whatever you submit, you are responsible for it.</p></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How to check each kind of output</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><div style="overflow-x: auto" tabindex="0" role="region" aria-label="How to check each kind of output"><table class="tbl"><caption>Five things AI gives you, and the check for each.</caption><thead><tr><th scope="col">AI gives you</th><th scope="col">How to check it</th></tr></thead><tbody><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Claims and facts</th><td>Find each claim in a reliable source you can name: a textbook, a peer-reviewed article, an official dataset. If you can find it only in AI output, don’t use it.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">References</th><td>Look each one up in the library catalogue or a database. Check the authors, year, title and journal match. Then open it and check it says what the AI says it does.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Quotations</th><td>Find the exact words in the original, with a page number. If you can’t, don’t present them as a quotation.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Numbers</th><td>Trace each figure to its original source and date. Redo any calculation yourself or in a spreadsheet. Check the units, and ask whether the result is plausible.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Code</th><td>Run it. Test it on cases where you know the answer, including unusual ones. Check every library or function it uses really exists. Don’t submit a line you can’t explain.</td></tr></tbody></table></div></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">When not to use AI</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0 0 6px; font-size: 16px; line-height: 1.55; color: var(--muted)">AI can help you finish a task and still stop you learning from it. In a study of nearly 1,000 secondary school maths students, those given an ordinary chatbot did better in practice, but 17% worse than students who never had it once it was taken away. A version that gave hints rather than answers largely avoided the harm (Bastani et al., 2025).</p><ul style="margin: 0; padding: 0; list-style: none"><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When the effort is the point.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">If a task is there to build a skill, such as writing an argument, solving a problem or reading a hard text, doing it yourself is the learning.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When you can’t judge the answer.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">If you don’t know enough to spot an error, you can’t check the output. Learn the basics first.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When the rules say no.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Read the AI-use statement for each task. If it’s unclear, ask before you start.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When you’d share what isn’t yours to share.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Don’t paste in personal data, confidential material or other people’s unpublished work. Use the tools your university approves.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">Instead: make it question you.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Ask it to quiz you, give hints, or argue against your view, rather than do the work for you.</span></span></li></ul></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 10px; max-width: 900px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(22px, 2.2vw, 28px); letter-spacing: -0.03em; line-height: 1.15">One rule</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--muted-inv)">If you can’t check it, don’t use it. If you can’t explain it, don’t submit it.</p>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">My checking checklist</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0; font-size: 16px; line-height: 1.55; color: var(--muted)">Copy this into your notes, or print it and keep it by your desk. Run through it before any AI output goes into your work.</p><div style="border: 1px solid var(--ring); display: flex; flex-direction: column">
+<div class="noprint" style="display: flex; justify-content: flex-end; border-bottom: 1px solid var(--line)"><button type="button" style="height: 44px; padding: 0 18px; border: 0; border-left: 1px solid var(--line); background: transparent; color: var(--fg); font-size: 15px; font-weight: 500; cursor: pointer"><span aria-live="polite">Copy</span><span class="sr-only"> My checking checklist</span></button></div>
+<pre style="margin: 0; padding: 20px; white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; font-size: 15px; line-height: 1.65">BEFORE I USE AI OUTPUT IN MY WORK
+
+[ ] I can name a reliable source, other than the AI, for every factual claim.
+[ ] I have found every reference in the library catalogue or a database, and checked it says what is claimed.
+[ ] I have found every quotation, word for word, in the original, with a page number.
+[ ] I have traced every number to its source and redone every calculation.
+[ ] I have run and tested any code, and I can explain every line.
+[ ] My use fits the AI-use statement for this task.
+[ ] I can explain and defend everything I submit without the AI.
+[ ] I have saved my prompts and the outputs I used.
+[ ] I have completed my AI-use declaration honestly and specifically.
+
+Stuck or unsure? Ask: [module leader] · [library] · [academic skills centre]</pre>
+</div></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div id="sources"><div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55"><li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö. and Mariman, R. (2025) ‘Generative AI without guardrails can harm learning: evidence from high school mathematics’, <em>Proceedings of the National Academy of Sciences</em>, 122(26), article e2422633122. doi: <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener" class="ul-link">10.1073/pnas.2422633122<span class="sr-only"> (opens in a new tab)</span></a>.</li></ol></div>
+</div></div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div class="noprint" style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Teaching students to check</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops help a team build verification and disclosure into its own modules, with activities like these.</p>
+</div>
+<a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; padding-top: 28px; padding-bottom: 40px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</div>
+<template id="dc-template">
+<div id="top" style="--bg: {{bg}}; --fg: {{fg}}; --muted: {{muted}}; --line: {{line}}; --ring: {{ring}}; --muted-inv: {{mutedInv}}; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" aria-current="page" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+<sc-if value="{{light}}" hint-placeholder-val="{{ true }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+</sc-if>
+</button>
+</div>
+</div>
+</header>
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+<section style="padding: clamp(40px, 6vw, 80px) 0 clamp(36px, 4vw, 56px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(38px, 5.6vw, 72px); line-height: 1.03; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">Checking AI output: a one-page guide for students</h1>
+<p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 62ch; text-wrap: pretty">AI tools write fluently and are often right. This page shows you how to check when they’re not, and when not to use them at all.</p>
+<dl style="margin: 8px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">For</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">Students at any level (print and share)</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">You’ll get</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">A checking routine and a checklist to copy</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">Time</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">4-minute read</dd></div><div style="background: var(--bg); padding: 14px 18px; display: flex; flex-direction: column; gap: 4px"><dt style="font-size: 13px; color: var(--muted)">Last reviewed</dt><dd style="margin: 0; font-size: 15px; line-height: 1.45">November 2026</dd></div></dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Fluent is not the same as true</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0; font-size: 17px; line-height: 1.65">AI chatbots produce text by predicting likely words from patterns in their training data. So the writing is smooth and confident whether or not it is correct. A wrong answer reads exactly like a right one. How it sounds tells you nothing about whether it’s true.</p><p style="margin: 0; font-size: 17px; line-height: 1.65">Tools that search the web make fewer obvious errors, but they can still misreport what a source says. A real reference attached to a claim it doesn’t support is harder to spot than a fake one. Whatever you submit, you are responsible for it.</p></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How to check each kind of output</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><div style="overflow-x: auto" tabindex="0" role="region" aria-label="How to check each kind of output"><table class="tbl"><caption>Five things AI gives you, and the check for each.</caption><thead><tr><th scope="col">AI gives you</th><th scope="col">How to check it</th></tr></thead><tbody><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Claims and facts</th><td>Find each claim in a reliable source you can name: a textbook, a peer-reviewed article, an official dataset. If you can find it only in AI output, don’t use it.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">References</th><td>Look each one up in the library catalogue or a database. Check the authors, year, title and journal match. Then open it and check it says what the AI says it does.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Quotations</th><td>Find the exact words in the original, with a page number. If you can’t, don’t present them as a quotation.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Numbers</th><td>Trace each figure to its original source and date. Redo any calculation yourself or in a spreadsheet. Check the units, and ask whether the result is plausible.</td></tr><tr><th scope="row" style="font-weight: 600; border-bottom: 1px solid var(--line); vertical-align: top">Code</th><td>Run it. Test it on cases where you know the answer, including unusual ones. Check every library or function it uses really exists. Don’t submit a line you can’t explain.</td></tr></tbody></table></div></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">When not to use AI</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0 0 6px; font-size: 16px; line-height: 1.55; color: var(--muted)">AI can help you finish a task and still stop you learning from it. In a study of nearly 1,000 secondary school maths students, those given an ordinary chatbot did better in practice, but 17% worse than students who never had it once it was taken away. A version that gave hints rather than answers largely avoided the harm (Bastani et al., 2025).</p><ul style="margin: 0; padding: 0; list-style: none"><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When the effort is the point.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">If a task is there to build a skill, such as writing an argument, solving a problem or reading a hard text, doing it yourself is the learning.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When you can’t judge the answer.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">If you don’t know enough to spot an error, you can’t check the output. Learn the basics first.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When the rules say no.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Read the AI-use statement for each task. If it’s unclear, ask before you start.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">When you’d share what isn’t yours to share.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Don’t paste in personal data, confidential material or other people’s unpublished work. Use the tools your university approves.</span></span></li><li style="display: flex; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--line)"><span style="display: flex; flex-direction: column; gap: 4px"><strong style="font-size: 17px; font-weight: 600; line-height: 1.4">Instead: make it question you.</strong><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Ask it to quiz you, give hints, or argue against your view, rather than do the work for you.</span></span></li></ul></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(24px, 3vw, 36px); display: flex; flex-direction: column; gap: 10px; max-width: 900px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(22px, 2.2vw, 28px); letter-spacing: -0.03em; line-height: 1.15">One rule</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: var(--muted-inv)">If you can’t check it, don’t use it. If you can’t explain it, don’t submit it.</p>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">My checking checklist</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><p style="margin: 0; font-size: 16px; line-height: 1.55; color: var(--muted)">Copy this into your notes, or print it and keep it by your desk. Run through it before any AI output goes into your work.</p><div style="border: 1px solid var(--ring); display: flex; flex-direction: column">
+<div class="noprint" style="display: flex; justify-content: flex-end; border-bottom: 1px solid var(--line)"><button type="button" onClick="{{copy0}}" style="height: 44px; padding: 0 18px; border: 0; border-left: 1px solid var(--line); background: transparent; color: var(--fg); font-size: 15px; font-weight: 500; cursor: pointer"><span aria-live="polite">{{copyLabel0}}</span><span class="sr-only"> My checking checklist</span></button></div>
+<pre style="margin: 0; padding: 20px; white-space: pre-wrap; overflow-wrap: anywhere; font-family: inherit; font-size: 15px; line-height: 1.65">BEFORE I USE AI OUTPUT IN MY WORK
+
+[ ] I can name a reliable source, other than the AI, for every factual claim.
+[ ] I have found every reference in the library catalogue or a database, and checked it says what is claimed.
+[ ] I have found every quotation, word for word, in the original, with a page number.
+[ ] I have traced every number to its source and redone every calculation.
+[ ] I have run and tested any code, and I can explain every line.
+[ ] My use fits the AI-use statement for this task.
+[ ] I can explain and defend everything I submit without the AI.
+[ ] I have saved my prompts and the outputs I used.
+[ ] I have completed my AI-use declaration honestly and specifically.
+
+Stuck or unsure? Ask: [module leader] · [library] · [academic skills centre]</pre>
+</div></div>
+</div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div id="sources"><div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--fg); padding-top: 18px"><ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55"><li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö. and Mariman, R. (2025) ‘Generative AI without guardrails can harm learning: evidence from high school mathematics’, <em>Proceedings of the National Academy of Sciences</em>, 122(26), article e2422633122. doi: <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener" class="ul-link">10.1073/pnas.2422633122<span class="sr-only"> (opens in a new tab)</span></a>.</li></ol></div>
+</div></div>
+</div>
+</section>
+<section style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div class="noprint" style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Teaching students to check</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops help a team build verification and disclosure into its own modules, with activities like these.</p>
+</div>
+<a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; padding-top: 28px; padding-bottom: 40px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</template>
+<script src="assets/dc-lite.js"></script>
+<script>
+const TPL = ["BEFORE I USE AI OUTPUT IN MY WORK\n\n[ ] I can name a reliable source, other than the AI, for every factual claim.\n[ ] I have found every reference in the library catalogue or a database, and checked it says what is claimed.\n[ ] I have found every quotation, word for word, in the original, with a page number.\n[ ] I have traced every number to its source and redone every calculation.\n[ ] I have run and tested any code, and I can explain every line.\n[ ] My use fits the AI-use statement for this task.\n[ ] I can explain and defend everything I submit without the AI.\n[ ] I have saved my prompts and the outputs I used.\n[ ] I have completed my AI-use declaration honestly and specifically.\n\nStuck or unsure? Ask: [module leader] · [library] · [academic skills centre]"];
+class Component extends DCLogic {
+renderVals() {
+const s = this.state || {};
+let stored = null; try { stored = localStorage.getItem('aiforhe-theme'); } catch (err) {}
+const dark = typeof s.dark === 'boolean' ? s.dark : (stored ? stored === 'dark' : (this.props.theme ?? 'light') === 'dark');
+return {
+  dark: dark,
+  light: !dark,
+  bg: dark ? '#000000' : '#FFFFFF',
+  fg: dark ? '#FFFFFF' : '#000000',
+  muted: dark ? '#A3A3A3' : '#5E5E5E',
+  mutedInv: dark ? '#5E5E5E' : '#A3A3A3',
+  line: dark ? '#333333' : '#DADADA',
+  ring: dark ? '#7A7A7A' : '#8A8A8A',
+  toggleLabel: dark ? 'Switch to light mode' : 'Switch to dark mode',
+  copy0: () => { try { navigator.clipboard.writeText(TPL[0]); } catch (err) {} this.setState({ copied: 0 }); },
+  copyLabel0: s.copied === 0 ? 'Copied' : 'Copy',
+  toggle: () => { try { localStorage.setItem('aiforhe-theme', dark ? 'light' : 'dark'); } catch (err) {} this.setState({ dark: !dark }); }
+};
+}
+}
+dcMount(Component, {"theme": "light"});
+</script>
+</body>
+</html>

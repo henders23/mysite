@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI for HE — Assessment redesign map</title>
+<meta name="description" content="Eight stages from the assessment you have to assessment that shows real learning, whether or not students use AI.">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+button{font:inherit}
+.navlink{text-decoration:none;text-underline-offset:6px}
+.navlink:hover{text-decoration:underline}
+.ul-link{text-decoration:underline;text-underline-offset:5px}
+.row .name{text-underline-offset:5px}
+.row:hover .name{text-decoration:underline}
+.stage-btn:hover .stage-title{text-decoration:underline;text-underline-offset:5px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-80px;z-index:10}
+.skip:focus{top:16px}
+a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+</style>
+</head>
+<body>
+<div id="dc-app">
+<div id="top" style="--bg: #FFFFFF; --fg: #000000; --muted: #5E5E5E; --line: #DADADA; --ring: #8A8A8A; --muted-inv: #A3A3A3; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+
+
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Assessment</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">Assessment redesign map</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">Assessment redesign map</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 54ch; text-wrap: pretty">Eight stages from the assessment you have to assessment that shows real learning, whether or not students use AI.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Assessment</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Programme level, or one module (stages 2–8)</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#map" class="navlink" style="font-size: 15px; padding: 12px 0">The map</a>
+<a href="#test" class="navlink" style="font-size: 15px; padding: 12px 0">The core test</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#related" class="navlink" style="font-size: 15px; padding: 12px 0">Works with</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">How do I redesign a task so it really shows learning?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">AI hasn't mainly created a cheating problem. It has exposed a validity problem: many tasks no longer show what we claim they show (Dawson et al., 2024). The map is a way to fix that by design, not by detection.</p>
+</div>
+</div>
+</section>
+
+<section id="map" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The map</h2>
+<button type="button" style="height: 44px; padding: 0; border: 0; background: transparent; color: var(--fg); font-size: 15px; text-decoration: underline; text-underline-offset: 5px; cursor: pointer">Expand all stages</button>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--fg)">
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-1" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">01</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Map before you design</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Chart every task across the programme before changing any of them.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-2" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">02</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Rewrite outcomes as capabilities</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Describe what a capable person does, not what they hand in.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-3" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">03</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Run the two-question audit</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Test whether AI can do it, and whether the effort is the learning.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-4" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">04</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Place the assurance points</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Decide where secured, individual evidence is gathered, and keep it sparse.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-5" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">05</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Redesign open tasks for learning</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Freed from assurance, make them worth doing well.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-6" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">06</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Rebuild the criteria</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Stop rewarding what AI supplies for free.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-7" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">07</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Design the feedback layer</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">Decide where AI gives feedback and where people judge.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" aria-expanded="false" aria-controls="stage-8" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">08</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">Communicate, moderate, evaluate</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">State the AI stance and its reason, then check it worked.</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+
+
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+
+</span>
+</button>
+</h3>
+
+</li>
+
+</ol>
+</div>
+</section>
+
+<section id="test" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The core test</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Stage 3, for every outcome. Two questions, in this order.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px 32px">
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">1. Can AI do this to the standard we certify?</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Don't guess. Give the task to two or three current models, including the free one your students use, and mark the output against your rubric.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">2. Is the effort the learning, or on the way to it?</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">If the struggle is the learning, it's constitutive. If it's overhead, like formatting references or boilerplate code, it's preceding.</span>
+</li>
+</ol>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">What to do, by whether AI can do the task and whether the effort is the learning</caption>
+<thead>
+<tr>
+<td style="width: 22%; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg)"></td>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">AI can't do it well</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">AI can do it well</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" style="text-align: left; vertical-align: top; font-weight: 600; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--line)">Effort is the learning</th>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Low risk.</strong> <span style="color: var(--muted)">Keep it, and recheck each year.</span></td>
+<td style="vertical-align: top; padding: 20px 16px; background: var(--fg); color: var(--bg)"><strong style="font-weight: 600">Redesign zone.</strong> <span style="color: var(--muted-inv)">Secure it, restructure it, or assess the process and judgement instead.</span></td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; vertical-align: top; font-weight: 600; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--line)">Effort comes before the learning</th>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Low value.</strong> <span style="color: var(--muted)">Consider removing the task.</span></td>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Opportunity zone.</strong> <span style="color: var(--muted)">Permit and teach AI use, and raise the level of the task.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">One task, limited time. Work down the list.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+<ol style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Write, in one sentence, what this task lets you conclude about a student.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Give the task to a current model and mark the output. Note the score.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>If it passes, decide: is the effort the learning, or on the way to it?</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span style="display: flex; flex-direction: column; gap: 8px">If the effort is the learning, check whether the programme secures this outcome elsewhere.<span style="color: var(--muted)">Yes: keep the task open, redesign it for learning, and add a process or dialogue element.</span><span style="color: var(--muted)">No: make this task an assurance point, or create one elsewhere.</span></span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>If the effort comes before the learning, permit AI explicitly, teach its use, and raise what's assessed.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">6</span><span>Rewrite the criteria so they reward what AI can't supply.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">7</span><span>Tell students the AI stance for this task, and why.</span></li>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Don't start here</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">With a detection policy.</strong> <span style="color: var(--muted)">Detection tools are unreliable (Weber-Wulff et al., 2023) and biased against non-native English writers (Liang et al., 2023).</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">By turning coursework into exams wholesale.</strong> <span style="color: var(--muted)">It swaps one validity problem for another, and harms the students inclusive assessment was designed to protect.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">By writing a policy document.</strong> <span style="color: var(--muted)">Without structural change to assessment, policy just moves the problem onto students and markers (Corbin, Dawson and Liu, 2025).</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Its leverage is at programme level.</strong> <span style="color: var(--muted)">One module can run stages 2–8, but it can't fix outcomes the programme never secures.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The audit dates quickly.</strong> <span style="color: var(--muted)">What AI can do changes each year, so the first question has to be asked again.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Oral assessment is only as reliable as its markers.</strong> <span style="color: var(--muted)">Budget for rubrics, training and calibration.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Process evidence has costs.</strong> <span style="color: var(--muted)">It can be faked, and asking it of everyone burdens students already managing disability, caring or paid work.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs institutional room to move.</strong> <span style="color: var(--muted)">Permission to change mid-cycle, briefed external examiners, and a way to cut assessment volume without full revalidation.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The two-lane split is contested.</strong> <span style="color: var(--muted)">Curtis (2025) argues that an all-or-none approach to AI is insupportable. Real practice sits on a gradient, which is why stage 8 sets the AI stance task by task.</span></li>
+</ul>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://educational-innovation.sydney.edu.au/teaching@sydney/embracing-the-future-of-assessment-at-the-university-of-sydney/" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Two-lane approach</span><span style="font-size: 14px; color: var(--muted)">Sector · University of Sydney</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">The logic behind stage 4: secured assurance points, open tasks everywhere else.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://arxiv.org/abs/2412.09029" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">AI Assessment Scale</span><span style="font-size: 14px; color: var(--muted)">Sector · Perkins, Furze, Roe &amp; MacVaugh</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">A shared vocabulary for stage 8: telling students how much AI each task allows.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://www.teqsa.gov.au/about-us/news-and-events/latest-news/assessment-reform-age-artificial-intelligence" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment reform for the age of AI</span><span style="font-size: 14px; color: var(--muted)">Sector · TEQSA</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Principles for reform across a whole programme, with students as partners.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Bridgeman, A., Liu, D. and Weeks, R. (2024) <em>Program level assessment design and the two-lane approach</em>. Teaching@Sydney, University of Sydney. Available at: <a href="https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/" target="_blank" rel="noopener" class="ul-link">https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 1 August 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Carless, D. and Boud, D. (2018) ‘The development of student feedback literacy: enabling uptake of feedback’, <em>Assessment &amp; Evaluation in Higher Education</em>, 43(8), pp. 1315–1325.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Corbin, T., Dawson, P. and Liu, D. (2025) ‘Talk is cheap: why structural assessment changes are needed for a time of GenAI’, <em>Assessment &amp; Evaluation in Higher Education</em>, 50(7), pp. 1087–1097. doi: <a href="https://doi.org/10.1080/02602938.2025.2503964" target="_blank" rel="noopener" class="ul-link">10.1080/02602938.2025.2503964<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Curtis, G.J. (2025) ‘The two-lane road to hell is paved with good intentions: why an all-or-none approach to generative AI, integrity, and assessment is insupportable’, <em>Higher Education Research &amp; Development</em>, 44(8), pp. 2151–2158. doi: <a href="https://doi.org/10.1080/07294360.2025.2476516" target="_blank" rel="noopener" class="ul-link">10.1080/07294360.2025.2476516<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Dawson, P. (2021) <em>Defending assessment security in a digital world: preventing e-cheating and supporting academic integrity in higher education</em>. Abingdon: Routledge.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Dawson, P., Bearman, M., Dollinger, M. and Boud, D. (2024) ‘Validity matters more than cheating’, <em>Assessment &amp; Evaluation in Higher Education</em>, 49(7), pp. 1005–1016. doi: <a href="https://doi.org/10.1080/02602938.2024.2386662" target="_blank" rel="noopener" class="ul-link">10.1080/02602938.2024.2386662<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Gibbs, G. and Simpson, C. (2004) ‘Conditions under which assessment supports students’ learning’, <em>Learning and Teaching in Higher Education</em>, 1, pp. 3–31.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Gonsalves, C. (2025) ‘Addressing student non-compliance in AI use declarations: implications for academic integrity and assessment in higher education’, <em>Assessment &amp; Evaluation in Higher Education</em>, 50(4), pp. 592–606. doi: <a href="https://doi.org/10.1080/02602938.2024.2415654" target="_blank" rel="noopener" class="ul-link">10.1080/02602938.2024.2415654<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Gulikers, J.T.M., Bastiaens, T.J. and Kirschner, P.A. (2004) ‘A five-dimensional framework for authentic assessment’, <em>Educational Technology Research and Development</em>, 52(3), pp. 67–86.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Jessop, T., El Hakim, Y. and Gibbs, G. (2014) ‘The whole is greater than the sum of its parts: a large-scale study of students’ learning in response to different programme assessment patterns’, <em>Assessment &amp; Evaluation in Higher Education</em>, 39(1), pp. 73–88.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Kofinas, A.K., Tsay, C.H.-H. and Pike, D. (2025) ‘The impact of generative AI on academic integrity of authentic assessments within a higher education context’, <em>British Journal of Educational Technology</em>. doi: <a href="https://doi.org/10.1111/bjet.13585" target="_blank" rel="noopener" class="ul-link">10.1111/bjet.13585<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’, <em>Patterns</em>, 4(7), article 100779.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Perkins, M., Roe, J. and Furze, L. (2025) ‘Reimagining the Artificial Intelligence Assessment Scale: a refined framework for educational assessment’, <em>Journal of University Teaching &amp; Learning Practice</em>, 22(7).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Sotiriadou, P., Logan, D., Daly, A. and Guest, R. (2020) ‘The role of authentic assessment to preserve academic integrity and promote skill development and employability’, <em>Studies in Higher Education</em>, 45(11), pp. 2132–2148. doi: <a href="https://doi.org/10.1080/03075079.2019.1582015" target="_blank" rel="noopener" class="ul-link">10.1080/03075079.2019.1582015<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Tertiary Education Quality and Standards Agency (2023) <em>Assessment reform for the age of artificial intelligence</em>. Melbourne: TEQSA. Available at: <a href="https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/assessment-reform-age-artificial-intelligence" target="_blank" rel="noopener" class="ul-link">https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/assessment-reform-age-artificial-intelligence<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 1 August 2026).</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">van der Vleuten, C.P.M., Schuwirth, L.W.T., Driessen, E.W., Dijkstra, J., Tigelaar, D., Baartman, L.K.J. and van Tartwijk, J. (2012) ‘A model for programmatic assessment fit for purpose’, <em>Medical Teacher</em>, 34(3), pp. 205–214.</li>
+
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O., Šigut, P. and Waddington, L. (2023) ‘Testing of detection tools for AI-generated text’, <em>International Journal for Educational Integrity</em>, 19, article 26. doi: <a href="https://doi.org/10.1007/s40979-023-00146-z" target="_blank" rel="noopener" class="ul-link">10.1007/s40979-023-00146-z<span class="sr-only"> (opens in a new tab)</span></a>.</li>
+
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher records in August 2026. The Sydney two-lane documents are institutional practice papers rather than peer-reviewed research, so read them alongside Curtis (2025).</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full field guide has the whole argument, worked examples across 26 disciplines, templates and the complete reference list.</p>
+<a href="field-guide.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the field guide
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Work through the map with your team</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The Module &amp; Assessment Redesign Lab takes one module through these stages over six weeks. Your team leaves with redesigned briefs, aligned marking criteria, a student AI-use statement and staff guidance.</p>
+</div>
+<a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</div>
+<template id="dc-template">
+<div id="top" style="--bg: {{bg}}; --fg: {{fg}}; --muted: {{muted}}; --line: {{line}}; --ring: {{ring}}; --muted-inv: {{mutedInv}}; position: relative; min-height: 100vh; font-family: 'Geist', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--fg); display: flex; flex-direction: column; transition: background-color 200ms ease, color 200ms ease; -webkit-font-smoothing: antialiased">
+
+<a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
+
+<header>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
+<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+</nav>
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</sc-if>
+<sc-if value="{{light}}" hint-placeholder-val="{{ true }}">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+</sc-if>
+</button>
+</div>
+</div>
+</header>
+
+<main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
+
+<section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<nav aria-label="Breadcrumb">
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
+<li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
+<li aria-hidden="true">/</li>
+<li><span style="display: inline-block; padding: 10px 0">Assessment</span></li>
+<li aria-hidden="true">/</li>
+<li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">Assessment redesign map</span></li>
+</ol>
+</nav>
+<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">Assessment redesign map</h1>
+<p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 54ch; text-wrap: pretty">Eight stages from the assessment you have to assessment that shows real learning, whether or not students use AI.</p>
+<dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Assessment</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Programme level, or one module (stages 2–8)</dd></div>
+</dl>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+</div>
+</section>
+
+<section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
+<a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
+<a href="#map" class="navlink" style="font-size: 15px; padding: 12px 0">The map</a>
+<a href="#test" class="navlink" style="font-size: 15px; padding: 12px 0">The core test</a>
+<a href="#tomorrow" class="navlink" style="font-size: 15px; padding: 12px 0">Use it tomorrow</a>
+<a href="#limits" class="navlink" style="font-size: 15px; padding: 12px 0">Where it falls short</a>
+<a href="#related" class="navlink" style="font-size: 15px; padding: 12px 0">Works with</a>
+<a href="#sources" class="navlink" style="font-size: 15px; padding: 12px 0">Sources</a>
+</nav>
+</div>
+</section>
+
+<section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
+<p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">How do I redesign a task so it really shows learning?</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">AI hasn't mainly created a cheating problem. It has exposed a validity problem: many tasks no longer show what we claim they show (Dawson et al., 2024). The map is a way to fix that by design, not by detection.</p>
+</div>
+</div>
+</section>
+
+<section id="map" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The map</h2>
+<button type="button" onClick="{{toggleAll}}" style="height: 44px; padding: 0; border: 0; background: transparent; color: var(--fg); font-size: 15px; text-decoration: underline; text-underline-offset: 5px; cursor: pointer">{{toggleAllLabel}}</button>
+</div>
+<ol style="flex: 3 1 560px; min-width: 0; list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--fg)">
+<sc-for list="{{stages}}" as="s" hint-placeholder-count="8">
+<li style="border-bottom: 1px solid var(--line)">
+<h3 style="margin: 0; font-size: inherit; font-weight: inherit">
+<button type="button" class="stage-btn" onClick="{{s.toggle}}" aria-expanded="{{s.open}}" aria-controls="{{s.panelId}}" style="width: 100%; display: flex; align-items: flex-start; gap: 20px; padding: 22px 0; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer">
+<span style="flex: 0 0 36px; font-size: 15px; font-weight: 500; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums">{{s.num}}</span>
+<span style="flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 6px">
+<span class="stage-title" style="font-size: 21px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.3">{{s.title}}</span>
+<span style="font-size: 16px; line-height: 1.5; color: var(--muted)">{{s.summary}}</span>
+</span>
+<span aria-hidden="true" style="flex: 0 0 24px; padding-top: 4px">
+<sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+</sc-if>
+<sc-if value="{{s.closed}}" hint-placeholder-val="{{ true }}">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</sc-if>
+</span>
+</button>
+</h3>
+<sc-if value="{{s.open}}" hint-placeholder-val="{{ false }}">
+<div id="{{s.panelId}}" style="padding: 0 0 24px 56px">
+<ul style="margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.55; max-width: 64ch">
+<sc-for list="{{s.points}}" as="p" hint-placeholder-count="3">
+<li>{{p.text}}</li>
+</sc-for>
+</ul>
+</div>
+</sc-if>
+</li>
+</sc-for>
+</ol>
+</div>
+</section>
+
+<section id="test" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The core test</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Stage 3, for every outcome. Two questions, in this order.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px 32px">
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">1. Can AI do this to the standard we certify?</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Don't guess. Give the task to two or three current models, including the free one your students use, and mark the output against your rubric.</span>
+</li>
+<li style="display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--fg); padding-top: 16px">
+<span style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">2. Is the effort the learning, or on the way to it?</span>
+<span style="font-size: 16px; line-height: 1.55; color: var(--muted)">If the struggle is the learning, it's constitutive. If it's overhead, like formatting references or boilerplate code, it's preceding.</span>
+</li>
+</ol>
+<div style="overflow-x: auto">
+<table style="width: 100%; min-width: 560px; border-collapse: collapse; font-size: 16px; line-height: 1.5">
+<caption class="sr-only">What to do, by whether AI can do the task and whether the effort is the learning</caption>
+<thead>
+<tr>
+<td style="width: 22%; padding: 12px 16px 12px 0; border-bottom: 1px solid var(--fg)"></td>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">AI can't do it well</th>
+<th scope="col" style="text-align: left; font-weight: 600; padding: 12px 16px; border-bottom: 1px solid var(--fg)">AI can do it well</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" style="text-align: left; vertical-align: top; font-weight: 600; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--line)">Effort is the learning</th>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Low risk.</strong> <span style="color: var(--muted)">Keep it, and recheck each year.</span></td>
+<td style="vertical-align: top; padding: 20px 16px; background: var(--fg); color: var(--bg)"><strong style="font-weight: 600">Redesign zone.</strong> <span style="color: var(--muted-inv)">Secure it, restructure it, or assess the process and judgement instead.</span></td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; vertical-align: top; font-weight: 600; padding: 20px 16px 20px 0; border-bottom: 1px solid var(--line)">Effort comes before the learning</th>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Low value.</strong> <span style="color: var(--muted)">Consider removing the task.</span></td>
+<td style="vertical-align: top; padding: 20px 16px; border-bottom: 1px solid var(--line)"><strong style="font-weight: 600">Opportunity zone.</strong> <span style="color: var(--muted)">Permit and teach AI use, and raise the level of the task.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+<section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">One task, limited time. Work down the list.</p>
+</div>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 40px">
+<ol style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">1</span><span>Write, in one sentence, what this task lets you conclude about a student.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">2</span><span>Give the task to a current model and mark the output. Note the score.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">3</span><span>If it passes, decide: is the effort the learning, or on the way to it?</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">4</span><span style="display: flex; flex-direction: column; gap: 8px">If the effort is the learning, check whether the programme secures this outcome elsewhere.<span style="color: var(--muted)">Yes: keep the task open, redesign it for learning, and add a process or dialogue element.</span><span style="color: var(--muted)">No: make this task an assurance point, or create one elsewhere.</span></span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">5</span><span>If the effort comes before the learning, permit AI explicitly, teach its use, and raise what's assessed.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">6</span><span>Rewrite the criteria so they reward what AI can't supply.</span></li>
+<li style="display: flex; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><span style="flex: 0 0 36px; font-weight: 600">7</span><span>Tell students the AI stance for this task, and why.</span></li>
+</ol>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h3 style="margin: 0; font-size: 21px; font-weight: 600; letter-spacing: -0.015em">Don't start here</h3>
+<ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">With a detection policy.</strong> <span style="color: var(--muted)">Detection tools are unreliable (Weber-Wulff et al., 2023) and biased against non-native English writers (Liang et al., 2023).</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">By turning coursework into exams wholesale.</strong> <span style="color: var(--muted)">It swaps one validity problem for another, and harms the students inclusive assessment was designed to protect.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">By writing a policy document.</strong> <span style="color: var(--muted)">Without structural change to assessment, policy just moves the problem onto students and markers (Corbin, Dawson and Liu, 2025).</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Its leverage is at programme level.</strong> <span style="color: var(--muted)">One module can run stages 2–8, but it can't fix outcomes the programme never secures.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The audit dates quickly.</strong> <span style="color: var(--muted)">What AI can do changes each year, so the first question has to be asked again.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Oral assessment is only as reliable as its markers.</strong> <span style="color: var(--muted)">Budget for rubrics, training and calibration.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">Process evidence has costs.</strong> <span style="color: var(--muted)">It can be faked, and asking it of everyone burdens students already managing disability, caring or paid work.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs institutional room to move.</strong> <span style="color: var(--muted)">Permission to change mid-cycle, briefed external examiners, and a way to cut assessment volume without full revalidation.</span></li>
+<li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">The two-lane split is contested.</strong> <span style="color: var(--muted)">Curtis (2025) argues that an all-or-none approach to AI is insupportable. Real practice sits on a gradient, which is why stage 8 sets the AI stance task by task.</span></li>
+</ul>
+</div>
+</section>
+
+<section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://educational-innovation.sydney.edu.au/teaching@sydney/embracing-the-future-of-assessment-at-the-university-of-sydney/" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Two-lane approach</span><span style="font-size: 14px; color: var(--muted)">Sector · University of Sydney</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">The logic behind stage 4: secured assurance points, open tasks everywhere else.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://arxiv.org/abs/2412.09029" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">AI Assessment Scale</span><span style="font-size: 14px; color: var(--muted)">Sector · Perkins, Furze, Roe &amp; MacVaugh</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">A shared vocabulary for stage 8: telling students how much AI each task allows.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+<li style="border-bottom: 1px solid var(--line)">
+<a href="https://www.teqsa.gov.au/about-us/news-and-events/latest-news/assessment-reform-age-artificial-intelligence" target="_blank" rel="noopener" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
+<span style="flex: 1 1 240px; display: flex; flex-direction: column; gap: 4px"><span class="name" style="font-size: 19px; font-weight: 600; letter-spacing: -0.015em">Assessment reform for the age of AI</span><span style="font-size: 14px; color: var(--muted)">Sector · TEQSA</span></span>
+<span style="flex: 2 1 280px; font-size: 16px; line-height: 1.5; color: var(--muted)">Principles for reform across a whole programme, with students as partners.</span>
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg><span class="sr-only">(opens in a new tab)</span>
+</a>
+</li>
+</ul>
+</div>
+</section>
+
+<section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
+<ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
+<sc-for list="{{refs}}" as="r" hint-placeholder-count="17">
+<li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">{{r.a}} <em>{{r.i}}</em>{{r.b}}<sc-if value="{{r.hasDoi}}" hint-placeholder-val="{{ false }}"> doi: <a href="{{r.doiUrl}}" target="_blank" rel="noopener" class="ul-link">{{r.doi}}<span class="sr-only"> (opens in a new tab)</span></a>.</sc-if><sc-if value="{{r.hasLink}}" hint-placeholder-val="{{ false }}"> Available at: <a href="{{r.link}}" target="_blank" rel="noopener" class="ul-link">{{r.link}}<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 1 August 2026).</sc-if></li>
+</sc-for>
+</ol>
+<p style="margin: 0; font-size: 15px; line-height: 1.55; color: var(--muted); max-width: 68ch">These references were checked against publisher records in August 2026. The Sydney two-lane documents are institutional practice papers rather than peer-reviewed research, so read them alongside Curtis (2025).</p>
+<div style="border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start">
+<p style="margin: 0; font-size: 17px; line-height: 1.5; max-width: 60ch">The full field guide has the whole argument, worked examples across 26 disciplines, templates and the complete reference list.</p>
+<a href="field-guide.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 20px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 15px; font-weight: 500">Go to the field guide
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
+<div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
+<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Work through the map with your team</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The Module &amp; Assessment Redesign Lab takes one module through these stages over six weeks. Your team leaves with redesigned briefs, aligned marking criteria, a student AI-use statement and staff guidance.</p>
+</div>
+<a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 0 clamp(48px, 6vw, 72px)">
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
+All theories and frameworks
+</a>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
+<a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
+</div>
+</footer>
+
+</div>
+</template>
+<script src="assets/dc-lite.js"></script>
+<script>
+const STAGES = [
+  { title: 'Map before you design', summary: 'Chart every task across the programme before changing any of them.', points: [
+    'For each module, record the outcomes assessed, task type, weighting, timing, whether it is secured, and which programme outcome it evidences. A TESTA-style audit does this well (Jessop, El Hakim and Gibbs, 2014).',
+    'Look for outcome orphans: programme outcomes evidenced nowhere securely.',
+    'Look for duplication: the same outcome secured many times over, usually by exam.',
+    'Look for bunching: assessment crowded into the last weeks, which drives instrumental behaviour and heavy AI use whatever the policy says (Gibbs and Simpson, 2004).'
+  ] },
+  { title: 'Rewrite outcomes as capabilities', summary: 'Describe what a capable person does, not what they hand in.', points: [
+    '“Write a critical essay on X” becomes “Construct and defend a contestable interpretation of X from primary evidence.”',
+    '“Produce a business report” becomes “Diagnose an organisational problem and justify a recommendation under resource constraints.”',
+    'Only capability language makes the later stages possible.'
+  ] },
+  { title: 'Run the two-question audit', summary: 'Test whether AI can do it, and whether the effort is the learning.', points: [
+    'First, give the task to current models and mark what they produce.',
+    'Then ask whether the effort is the learning itself, or overhead on the way to it.',
+    'The answers place each task in one of four zones. See the core test below.'
+  ] },
+  { title: 'Place the assurance points', summary: 'Decide where secured, individual evidence is gathered, and keep it sparse.', points: [
+    'Separate assurance from development: secure a few points and leave the rest open (Dawson, 2021; Bridgeman, Liu and Weeks, 2024).',
+    'Four to eight across a three-year degree, each carrying several outcomes, is usually enough.',
+    'Progress across the years: foundational reasoning first, integrated professional judgement last.',
+    'Base progression on accumulated evidence, not a single high-stakes moment (van der Vleuten et al., 2012).',
+    'Offer each in at least two equally rigorous formats, for inclusion.',
+    'Strong formats: interactive orals (Sotiriadou et al., 2020), a short viva on open work, observed performance, and supervised in-class work.'
+  ] },
+  { title: 'Redesign open tasks for learning', summary: 'Freed from assurance, make them worth doing well.', points: [
+    'Locality: grounded in this cohort, this place, this week (Gulikers, Bastiaens and Kirschner, 2004).',
+    'Contingency: later stages depend on the student’s earlier choices.',
+    'Accountability: presented to, and questioned by, a real audience.',
+    'Positionality: requires a stance the student owns and can defend.',
+    'Authenticity alone is not protection: authentic tasks have been found not to resist generative AI (Kofinas, Tsay and Pike, 2025), so pair them with accountability.'
+  ] },
+  { title: 'Rebuild the criteria', summary: 'Stop rewarding what AI supplies for free.', points: [
+    'Fluency, structure, coverage, surface accuracy and breadth of citation no longer tell students apart.',
+    'For each criterion, ask whether a competent model with a good prompt would meet it.',
+    'If it would, make it a threshold requirement or remove it.'
+  ] },
+  { title: 'Design the feedback layer', summary: 'Decide where AI gives feedback and where people judge.', points: [
+    'AI: instant, developmental feedback on drafts. Never summative.',
+    'People: summative judgement, setting standards, and the conversation that surfaces reasoning.',
+    'Ask students for a short note on what they changed after feedback, what they rejected, and why. It shows they used the feedback, not just received it (Carless and Boud, 2018).'
+  ] },
+  { title: 'Communicate, moderate, evaluate', summary: 'State the AI stance and its reason, then check it worked.', points: [
+    'Use consistent vocabulary, such as AI Assessment Scale levels (Perkins, Roe and Furze, 2025), and always give the reason.',
+    'Don’t rely on declarations alone: 74% of students at one UK business school did not complete a mandatory AI-use declaration (Gonsalves, 2025).',
+    'Moderate for new failure modes: near-identical scripts, polished prose with hollow reasoning, and citations that don’t say what’s claimed.',
+    'Guard against penalising multilingual students for fluent prose. AI detectors are already biased against them (Liang et al., 2023).',
+    'Evaluate the redesign. Without it, change is just churn.'
+  ] }
+];
+const REFS = [
+  { a: 'Bridgeman, A., Liu, D. and Weeks, R. (2024)', i: 'Program level assessment design and the two-lane approach', b: '. Teaching@Sydney, University of Sydney.', link: 'https://educational-innovation.sydney.edu.au/teaching@sydney/program-level-assessment-two-lane/' },
+  { a: 'Carless, D. and Boud, D. (2018) ‘The development of student feedback literacy: enabling uptake of feedback’,', i: 'Assessment & Evaluation in Higher Education', b: ', 43(8), pp. 1315–1325.' },
+  { a: 'Corbin, T., Dawson, P. and Liu, D. (2025) ‘Talk is cheap: why structural assessment changes are needed for a time of GenAI’,', i: 'Assessment & Evaluation in Higher Education', b: ', 50(7), pp. 1087–1097.', doi: '10.1080/02602938.2025.2503964' },
+  { a: 'Curtis, G.J. (2025) ‘The two-lane road to hell is paved with good intentions: why an all-or-none approach to generative AI, integrity, and assessment is insupportable’,', i: 'Higher Education Research & Development', b: ', 44(8), pp. 2151–2158.', doi: '10.1080/07294360.2025.2476516' },
+  { a: 'Dawson, P. (2021)', i: 'Defending assessment security in a digital world: preventing e-cheating and supporting academic integrity in higher education', b: '. Abingdon: Routledge.' },
+  { a: 'Dawson, P., Bearman, M., Dollinger, M. and Boud, D. (2024) ‘Validity matters more than cheating’,', i: 'Assessment & Evaluation in Higher Education', b: ', 49(7), pp. 1005–1016.', doi: '10.1080/02602938.2024.2386662' },
+  { a: 'Gibbs, G. and Simpson, C. (2004) ‘Conditions under which assessment supports students’ learning’,', i: 'Learning and Teaching in Higher Education', b: ', 1, pp. 3–31.' },
+  { a: 'Gonsalves, C. (2025) ‘Addressing student non-compliance in AI use declarations: implications for academic integrity and assessment in higher education’,', i: 'Assessment & Evaluation in Higher Education', b: ', 50(4), pp. 592–606.', doi: '10.1080/02602938.2024.2415654' },
+  { a: 'Gulikers, J.T.M., Bastiaens, T.J. and Kirschner, P.A. (2004) ‘A five-dimensional framework for authentic assessment’,', i: 'Educational Technology Research and Development', b: ', 52(3), pp. 67–86.' },
+  { a: 'Jessop, T., El Hakim, Y. and Gibbs, G. (2014) ‘The whole is greater than the sum of its parts: a large-scale study of students’ learning in response to different programme assessment patterns’,', i: 'Assessment & Evaluation in Higher Education', b: ', 39(1), pp. 73–88.' },
+  { a: 'Kofinas, A.K., Tsay, C.H.-H. and Pike, D. (2025) ‘The impact of generative AI on academic integrity of authentic assessments within a higher education context’,', i: 'British Journal of Educational Technology', b: '.', doi: '10.1111/bjet.13585' },
+  { a: 'Liang, W., Yuksekgonul, M., Mao, Y., Wu, E. and Zou, J. (2023) ‘GPT detectors are biased against non-native English writers’,', i: 'Patterns', b: ', 4(7), article 100779.' },
+  { a: 'Perkins, M., Roe, J. and Furze, L. (2025) ‘Reimagining the Artificial Intelligence Assessment Scale: a refined framework for educational assessment’,', i: 'Journal of University Teaching & Learning Practice', b: ', 22(7).' },
+  { a: 'Sotiriadou, P., Logan, D., Daly, A. and Guest, R. (2020) ‘The role of authentic assessment to preserve academic integrity and promote skill development and employability’,', i: 'Studies in Higher Education', b: ', 45(11), pp. 2132–2148.', doi: '10.1080/03075079.2019.1582015' },
+  { a: 'Tertiary Education Quality and Standards Agency (2023)', i: 'Assessment reform for the age of artificial intelligence', b: '. Melbourne: TEQSA.', link: 'https://www.teqsa.gov.au/guides-resources/resources/corporate-publications/assessment-reform-age-artificial-intelligence' },
+  { a: 'van der Vleuten, C.P.M., Schuwirth, L.W.T., Driessen, E.W., Dijkstra, J., Tigelaar, D., Baartman, L.K.J. and van Tartwijk, J. (2012) ‘A model for programmatic assessment fit for purpose’,', i: 'Medical Teacher', b: ', 34(3), pp. 205–214.' },
+  { a: 'Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O., Šigut, P. and Waddington, L. (2023) ‘Testing of detection tools for AI-generated text’,', i: 'International Journal for Educational Integrity', b: ', 19, article 26.', doi: '10.1007/s40979-023-00146-z' }
+];
+class Component extends DCLogic {
+renderVals() {
+const s = this.state || {};
+let stored = null; try { stored = localStorage.getItem('aiforhe-theme'); } catch (e) {}
+const dark = typeof s.dark === 'boolean' ? s.dark : (stored ? stored === 'dark' : (this.props.theme ?? 'light') === 'dark');
+const open = s.open || {};
+const allOpen = STAGES.every((_, i) => open[i]);
+const stages = STAGES.map((st, i) => ({
+  num: String(i + 1).padStart(2, '0'),
+  title: st.title,
+  summary: st.summary,
+  points: st.points.map((t) => ({ text: t })),
+  open: !!open[i],
+  closed: !open[i],
+  panelId: 'stage-' + (i + 1),
+  toggle: () => {
+    const next = Object.assign({}, this.state && this.state.open);
+    next[i] = !next[i];
+    this.setState({ open: next });
+  }
+}));
+return {
+  dark: dark,
+  light: !dark,
+  bg: dark ? '#000000' : '#FFFFFF',
+  fg: dark ? '#FFFFFF' : '#000000',
+  muted: dark ? '#A3A3A3' : '#5E5E5E',
+  mutedInv: dark ? '#5E5E5E' : '#A3A3A3',
+  line: dark ? '#333333' : '#DADADA',
+  ring: dark ? '#7A7A7A' : '#8A8A8A',
+  toggleLabel: dark ? 'Switch to light mode' : 'Switch to dark mode',
+  toggle: () => { try { localStorage.setItem('aiforhe-theme', dark ? 'light' : 'dark'); } catch (e) {} this.setState({ dark: !dark }); },
+  stages: stages,
+  refs: REFS.map((r) => ({ a: r.a, i: r.i, b: r.b, hasDoi: !!r.doi, doi: r.doi || '', doiUrl: r.doi ? 'https://doi.org/' + r.doi : '', hasLink: !!r.link, link: r.link || '' })),
+  toggleAllLabel: allOpen ? 'Collapse all stages' : 'Expand all stages',
+  toggleAll: () => {
+    const next = {};
+    if (!allOpen) STAGES.forEach((_, i) => { next[i] = true; });
+    this.setState({ open: next });
+  }
+};
+}
+}
+dcMount(Component, {"theme": "light"});
+</script>
+</body>
+</html>
