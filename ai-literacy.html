@@ -21,6 +21,8 @@ details[open] .chev{transform:rotate(45deg)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:16px;top:-80px;z-index:10}
 .skip:focus{top:16px}
+.hgrid{border-width:1px 0 0 1px!important}
+.hgrid>*{box-shadow:inset -1px -1px 0 var(--line)}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
 </head>
@@ -30,18 +32,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 <a href="#list" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to the activities</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 
 
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
@@ -53,9 +55,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 <main style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI literacy across the disciplines</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI literacy across the disciplines</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">100 practical activities in ten groups: a foundation set that works in every discipline, then nine subject groups, each ordered as a teaching sequence. Every activity gives its level, time, tools, data risk and the artefact students produce.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/developing-ai-literacy-across-the-disciplines.docx" download="" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -63,17 +65,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 Download the full guide (Word)</a>
 <span style="font-size: 15px; color: var(--muted)">Includes the framework comparison, rationale and safety guidance</span>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="dims-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="dims-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">What AI literacy means here</h2>
+<h2 id="dims-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">What AI literacy means here</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted); max-width: 52ch">Six overlapping dimensions, synthesised from the major frameworks.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <li style="background: var(--bg); padding: 20px 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">Technical understanding</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">How AI systems work, at an appropriate level; for generative models, how learned patterns yield probabilistic outputs that can be fluent but wrong, and how search, code execution and agents change what an output rests on.</span></li>
 
@@ -92,17 +94,17 @@ Download the full guide (Word)</a>
 </section>
 
 <section aria-labelledby="ev-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="ev-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Evidence standards</h2>
+<h2 id="ev-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Evidence standards</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted); max-width: 52ch">The codes in square brackets in the steps.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[P]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Prompt log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Record the tool, model or version, mode (e.g. search off or on, deep research, agent), access tier (free, paid or institution-licensed), date, exact prompt and unedited output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[R]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Repeat runs</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Outputs vary. For any comparison, run each condition at least three times in fresh sessions (five or more for bias and calibration tests) and report the range, not a single output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[V]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Verification log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">For each claim, record the source checked, what it actually says, and a verdict: supported, partly supported, unsupported, contradicted, or source not found.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[C]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Comparison table</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Name the criteria before comparing, and give at least one concrete example for each judgement.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[D]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Revision record</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Keep first and final versions, noting what changed and why.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[M]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Reproducible method</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">State the method, data, units, assumptions and any code, so another person could reproduce the result.</span></span></li></ul>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)"><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[P]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Prompt log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Record the tool, model or version, mode (e.g. search off or on, deep research, agent), access tier (free, paid or institution-licensed), date, exact prompt and unedited output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[R]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Repeat runs</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Outputs vary. For any comparison, run each condition at least three times in fresh sessions (five or more for bias and calibration tests) and report the range, not a single output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[V]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Verification log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">For each claim, record the source checked, what it actually says, and a verdict: supported, partly supported, unsupported, contradicted, or source not found.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[C]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Comparison table</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Name the criteria before comparing, and give at least one concrete example for each judgement.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[D]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Revision record</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Keep first and final versions, noting what changed and why.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[M]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Reproducible method</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">State the method, data, units, assumptions and any code, so another person could reproduce the result.</span></span></li></ul>
 </div>
 </section>
 
 <section aria-label="Filter activities" style="padding: 0 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; max-width: 560px">
 <label for="act-search" style="font-size: 14px; font-weight: 500">Search</label>
 <input id="act-search" type="search" value="" placeholder="Try agent, feedback, wellbeing or Red" autocomplete="off" style="height: 52px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--bg); color: var(--fg); font-size: 17px; width: 100%; box-sizing: border-box">
@@ -111,27 +113,27 @@ Download the full guide (Word)</a>
 <span id="disc-label" style="font-size: 14px; font-weight: 500; min-width: 64px; padding-top: 12px">Discipline</span>
 <div role="group" aria-labelledby="disc-label" style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 600px">
 
-<button type="button" aria-pressed="true" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: var(--fg); color: var(--bg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">All <span style="opacity: 0.7">100</span></button>
+<button type="button" aria-pressed="true" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--fg); color: var(--bg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">All <span style="opacity: 0.7">100</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Every discipline <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Every discipline <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Languages, education &amp; EAP <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Languages, education &amp; EAP <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">History &amp; philosophy <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">History &amp; philosophy <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Social sciences &amp; psychology <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Social sciences &amp; psychology <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Business &amp; finance <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Business &amp; finance <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Law &amp; criminology <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Law &amp; criminology <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Health &amp; care <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Health &amp; care <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Computing &amp; engineering <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Computing &amp; engineering <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Maths &amp; sciences <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Maths &amp; sciences <span style="opacity: 0.7">10</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Creative arts &amp; media <span style="opacity: 0.7">10</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Creative arts &amp; media <span style="opacity: 0.7">10</span></button>
 
 </div>
 </div>
@@ -143,11 +145,11 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="list" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 72px)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 72px)">
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">A. Foundations for every discipline</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">A. Foundations for every discipline</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Patterns common to every subject: how outputs are produced, fidelity to sources, learning with a tool rather than through it, abstaining, delegating safely and disclosing.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Start with 1; its log feeds 6, 7, 10 and 100. Run 2–4 as one session on how outputs are produced and vary. Pair 5 and 6, and run 7 a week later. 8 precedes 45, 56 and 73. Run 9 with the care in 1.10. 10 is reused in 60 and 94.</p>
 </div>
@@ -164,7 +166,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -206,7 +208,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -248,7 +250,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -290,7 +292,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -332,7 +334,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -374,7 +376,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -400,7 +402,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> the suggestion log, revision record [D] and a 200-word reflection on where editing becomes ghost-writing, added to your log from 1.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 1, 5, 10, 19</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Institution-licensed tools only, so student writing is not used for training. Do not upload anyone else’s writing.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Institution-licensed tools only, so student writing is not used for training. Do not upload anyone else’s writing.</p>
 </div>
 </details>
 </li>
@@ -416,7 +418,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -458,7 +460,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -484,7 +486,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> an annotated action log, a verification log [V] and a one-page delegation brief: what may be delegated, what needs approval, who is responsible.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 45, 56, 73, 88</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use a sandbox account with no payment details and no access to real email, files or accounts. The task must not send, buy, delete or publish anything.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use a sandbox account with no payment details and no access to real email, files or accounts. The task must not send, buy, delete or publish anything.</p>
 </div>
 </details>
 </li>
@@ -500,7 +502,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -526,7 +528,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a group transcript analysis and a private use plan (confirmed as done, not marked).</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 4, 11, 39</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning and a no-questions opt-out. Staff write the transcripts, which must not depict crisis or self-harm. End by signposting student wellbeing services.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning and a no-questions opt-out. Staff write the transcripts, which must not depict crisis or self-harm. End by signposting student wellbeing services.</p>
 </div>
 </details>
 </li>
@@ -542,7 +544,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -578,7 +580,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">B. Languages, Literature, Linguistics, Education &amp; EAP</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">B. Languages, Literature, Linguistics, Education &amp; EAP</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Interpretation, authorship, language and learning: fluent text without understanding, and what learners gain or lose when a tool does part of the work.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> 11 and 12 form one opening seminar; 13 verifies against language data. 14–17 are productive use (16 builds on 5; 17 is the core EAP activity). 18–20 address authorship and pedagogy: 19 pairs with 6, and the capstone 20 with 10.</p>
 </div>
@@ -595,7 +597,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -637,7 +639,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -679,7 +681,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -721,7 +723,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -763,7 +765,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -805,7 +807,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–5</dd></div>
 
@@ -847,7 +849,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7 (EAP and pre-sessional)</dd></div>
 
@@ -889,7 +891,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -931,7 +933,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7 (teacher education, TESOL, EAP)</dd></div>
 
@@ -957,7 +959,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a feedback evaluation table and a 400-word feedback-practice statement.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 6, 20</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic or fully anonymised texts written for the purpose, never real students’ work without consent and institutional approval.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic or fully anonymised texts written for the purpose, never real students’ work without consent and institutional approval.</p>
 </div>
 </details>
 </li>
@@ -973,7 +975,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7 (teacher education, EAP, academic practice)</dd></div>
 
@@ -1009,7 +1011,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">C. History, Classics, Philosophy &amp; Religious Studies</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">C. History, Classics, Philosophy &amp; Religious Studies</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Evidence, provenance and reasoning: anachronism, fabrication and training-data bias, with fluent synthesis treated as a claim to test, not a source.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Open by asking what the system is (21, 22), which changes how students read every later output. Then evidence (23, 24, applying 3), learning (25, building on 5), reasoning (26, 27), and authority, bias and ethics (28–30). The capstone, 30, pairs with 20.</p>
 </div>
@@ -1026,7 +1028,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1068,7 +1070,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1110,7 +1112,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1152,7 +1154,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1194,7 +1196,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–5</dd></div>
 
@@ -1236,7 +1238,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–6</dd></div>
 
@@ -1278,7 +1280,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -1320,7 +1322,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1362,7 +1364,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1404,7 +1406,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1440,7 +1442,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">D. Social Sciences &amp; Psychology</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">D. Social Sciences &amp; Psychology</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Sociotechnical and reflective literacy: algorithms as social actors, data and power, AI as research tool and object of study, and automation bias in your own use.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Observe AI in the world (31, 32; 32 pairs with 21) before using it. Then method verification (33–35), self-scrutiny (36, building on 4), structural critique (37, 38) and clinical ethics (39). The capstone, 40, studies the bias students have practised against; pair it with 36. Check 1.10 before 31, 34 and 40.</p>
 </div>
@@ -1457,7 +1459,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1483,7 +1485,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a 1,500-word ethnographic report with anonymised extracts and a positionality statement.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 1, 32</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Check whether departmental ethics review is required before fieldwork. Without approval, limit it to a classroom exercise with consenting peers and no retained data.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Check whether departmental ethics review is required before fieldwork. Without approval, limit it to a classroom exercise with consenting peers and no retained data.</p>
 </div>
 </details>
 </li>
@@ -1499,7 +1501,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1541,7 +1543,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1583,7 +1585,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1609,7 +1611,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> both instruments and a 400-word methods note on the pilot.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 33, 38</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Pilot only with consenting classmates, anonymously, with no retained data, unless ethics approval has been obtained.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Pilot only with consenting classmates, anonymously, with no retained data, unless ethics approval has been obtained.</p>
 </div>
 </details>
 </li>
@@ -1625,7 +1627,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1667,7 +1669,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -1709,7 +1711,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1751,7 +1753,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1793,7 +1795,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -1819,7 +1821,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a structured evaluation against the chosen standards and a two-page safeguards memo.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 9, 61</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning and an opt-out. Staff write the scenarios, which exclude acute crisis and self-harm role-play. Debrief at the end and signpost student support services.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning and an opt-out. Staff write the scenarios, which exclude acute crisis and self-harm role-play. Debrief at the end and signpost student support services.</p>
 </div>
 </details>
 </li>
@@ -1835,7 +1837,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -1861,7 +1863,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a protocol, pilot report and intervention proposal (2,000 words).</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 36, 38</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> This almost certainly needs ethics approval if any data are retained. Without approval, run the pilot as a classroom demonstration with anonymous, non-retained responses.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> This almost certainly needs ethics approval if any data are retained. Without approval, run the pilot as a classroom demonstration with anonymous, non-retained responses.</p>
 </div>
 </details>
 </li>
@@ -1871,7 +1873,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">E. Business, Economics, Finance &amp; Accounting</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">E. Business, Economics, Finance &amp; Accounting</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Productivity with governance: how a tool’s numbers were produced, and risk, controls, compliance and policy.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> 41 comes first: auditing an AI forecast changes how students approach every later task. Evaluation (42, 43) precedes productive use (44); 45 builds on 8 and 43. Ethics and risk (46–49) lead to policy (50), as graduates meet it at work. Pair 43 with 45 for accounting, and 48 with 50 for HR and management.</p>
 </div>
@@ -1888,7 +1890,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -1930,7 +1932,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–6</dd></div>
 
@@ -1972,7 +1974,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -2014,7 +2016,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–6</dd></div>
 
@@ -2056,7 +2058,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2082,7 +2084,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a control matrix, a process map showing human approval, and a note on accountability.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 8, 43, 49, 56</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic invoices only. Any agent runs in a sandbox with no access to real payment systems or credentials.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic invoices only. Any agent runs in a sandbox with no access to real payment systems or credentials.</p>
 </div>
 </details>
 </li>
@@ -2098,7 +2100,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2140,7 +2142,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -2182,7 +2184,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2224,7 +2226,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -2266,7 +2268,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -2302,7 +2304,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">F. Law &amp; Criminology</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">F. Law &amp; Criminology</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Professional responsibility: accuracy is non-negotiable, fabricated or misdescribed authority brings real sanctions, and confidentiality, transparency and fairness are central.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> 51 (applying 3) opens because checking an authority that does not say what the tool claims is unforgettable. Statute (52) and duties (53, 54) follow, then AI’s legal problems (55, 56, 58; 56 builds on 8), criminology (57) and access to justice (59). 60, building on 10, closes. Pair 51 with 53, and 55 with 99.</p>
 </div>
@@ -2319,7 +2321,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -2361,7 +2363,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -2403,7 +2405,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2445,7 +2447,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2487,7 +2489,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2529,7 +2531,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2571,7 +2573,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2613,7 +2615,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2655,7 +2657,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2681,7 +2683,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> an evaluation report with questions and verdicts, and one page of guardrails.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 51, 61</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use hypothetical questions only, never real people’s legal problems.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use hypothetical questions only, never real people’s legal problems.</p>
 </div>
 </details>
 </li>
@@ -2697,7 +2699,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -2733,7 +2735,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">G. Health, Care &amp; Veterinary Sciences</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">G. Health, Care &amp; Veterinary Sciences</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Medicine, nursing and midwifery, pharmacy, veterinary science and social work. The safety and dignity of patients, animals and service users govern: check outputs against evidence and guidelines, attend to equity, keep records fair, and never use a model as sole source for care decisions.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Safety verification (61, 62) comes before any productive use. Then evidence (63, building on 3), documentation (64), equity (65), veterinary practice (66) and social work (67). Governance (68) and communication (69, 70) close, once students understand the failures they must explain. Pair 61 with 62, and 64 with 67. All cases are fictional (see 1.10).</p>
 </div>
@@ -2750,7 +2752,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2776,7 +2778,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a harm-rated error log and a one-page safety recommendation.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 3, 62</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional vignettes only. Outputs are never used for real care, and students on placement must not use these tools to make or check clinical decisions.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional vignettes only. Outputs are never used for real care, and students on placement must not use these tools to make or check clinical decisions.</p>
 </div>
 </details>
 </li>
@@ -2792,7 +2794,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7 (medicine, nursing, pharmacy)</dd></div>
 
@@ -2818,7 +2820,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a dosing verification table and a 250-word medication-safety statement.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 61, 66</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional patients only; never to be used for a real patient. Run it with a clinical educator or pharmacist present, and debrief on the most dangerous errors.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional patients only; never to be used for a real patient. Run it with a clinical educator or pharmacist present, and debrief on the most dangerous errors.</p>
 </div>
 </details>
 </li>
@@ -2834,7 +2836,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2876,7 +2878,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7 (nursing, midwifery, medicine)</dd></div>
 
@@ -2902,7 +2904,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a categorised error log and a one-page verification workflow.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 67, 68</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic or properly de-identified material only.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use synthetic or properly de-identified material only.</p>
 </div>
 </details>
 </li>
@@ -2918,7 +2920,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -2944,7 +2946,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a results table with method [M] and a 500-word equity analysis.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 57, 95</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Staff review the vignettes before use so that they do not themselves rely on stereotypes.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Staff review the vignettes before use so that they do not themselves rely on stereotypes.</p>
 </div>
 </details>
 </li>
@@ -2960,7 +2962,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -2986,7 +2988,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a species-by-species verification log and a one-page guidance note.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 62, 87</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional cases only; never to be used for a real animal.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional cases only; never to be used for a real animal.</p>
 </div>
 </details>
 </li>
@@ -3002,7 +3004,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3028,7 +3030,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> the annotated summary, your rewrite and a 400-word note on accountability for AI-assisted records.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 57, 64</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional files only, written by staff. Give a content warning where the case involves abuse or neglect, and offer an opt-out.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Fictional files only, written by staff. Give a content warning where the case involves abuse or neglect, and offer an opt-out.</p>
 </div>
 </details>
 </li>
@@ -3044,7 +3046,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3086,7 +3088,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3128,7 +3130,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3164,7 +3166,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">H. Computing, Data Science &amp; Engineering</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">H. Computing, Data Science &amp; Engineering</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">The most technical literacy: architectures, evaluation, security and reproducibility; responsibility for the data, bias and energy of systems built; and normal sign-off for AI-assisted engineering.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Characterise systems before trusting them (71, 72). 73 builds on 8. 74 and 75 form one engineering session. Security and interpretability (76, 77) precede the ethical and sustainability duties of professional codes (78, 79); 80 integrates everything. 72, 76, 77 and 79 need programming; 74 and 75 do not.</p>
 </div>
@@ -3181,7 +3183,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -3223,7 +3225,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -3265,7 +3267,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3291,7 +3293,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a code-review report, the test suite and a short personal delegation policy.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 8, 76</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Run the agent in a sandboxed repository with no access to credentials, production systems or your own files.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Run the agent in a sandboxed repository with no access to credentials, production systems or your own files.</p>
 </div>
 </details>
 </li>
@@ -3307,7 +3309,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3333,7 +3335,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a checked calculation sheet, a discrepancy list and a 250-word note on sign-off responsibility.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 75, 83</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> An exercise only; never used to sign off a real design.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> An exercise only; never used to sign off a real design.</p>
 </div>
 </details>
 </li>
@@ -3349,7 +3351,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3391,7 +3393,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -3417,7 +3419,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a security report with attack log, mitigations and re-test results.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 45, 73</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Attack only your own sandboxed application. Testing systems you do not own or are not authorised to test risks offences under the Computer Misuse Act 1990.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Attack only your own sandboxed application. Testing systems you do not own or are not authorised to test risks offences under the Computer Misuse Act 1990.</p>
 </div>
 </details>
 </li>
@@ -3433,7 +3435,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -3475,7 +3477,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3517,7 +3519,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3559,7 +3561,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 6–7</dd></div>
 
@@ -3595,7 +3597,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">I. Mathematics &amp; Natural, Environmental and Earth Sciences</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">I. Mathematics &amp; Natural, Environmental and Earth Sciences</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Rigour and uncertainty: how a result was produced, checking every step of machine reasoning, and honesty about error, assumptions and confidence.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> 81 (building on 2) separates predicted from computed answers; only the latter can be inspected. Verification moves through mathematics, physics and the laboratory (82–84), then uncertainty (85), where scientific AI literacy most often fails, and applied tools (86, 87). Literature (88, building on 3) and integrity (89) follow; 90 builds on 7. Pair 81 with 82, and 89 with 80.</p>
 </div>
@@ -3612,7 +3614,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -3654,7 +3656,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3696,7 +3698,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -3738,7 +3740,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -3764,7 +3766,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a hazard verification table and a short safety statement.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 62, 89</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> A comparison exercise only; the output must not guide live laboratory work.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> A comparison exercise only; the output must not guide live laboratory work.</p>
 </div>
 </details>
 </li>
@@ -3780,7 +3782,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3822,7 +3824,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3864,7 +3866,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -3906,7 +3908,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3948,7 +3950,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -3990,7 +3992,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–5</dd></div>
 
@@ -4026,7 +4028,7 @@ Download the full guide (Word)</a>
 
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">J. Creative Arts, Architecture, Design, Media &amp; Journalism</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">J. Creative Arts, Architecture, Design, Media &amp; Journalism</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">Authorship, originality, consent and truth: where generation ends and craft begins, IP and training data, what can be built, and firm lines on disclosure and verification.</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> Make before critiquing: hands-on work (91) gives students purchase on authorship debates. Then craft (92, 93), authorship (94, building on 10), and bias, IP and consent (95–97; pair 96 with 58 and 18, 97 with 99). Journalism (98, 99) draws on earlier work; a stand-alone journalism module starts with 98. 100 completes the log begun in 1.</p>
 </div>
@@ -4043,7 +4045,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -4085,7 +4087,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -4127,7 +4129,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -4169,7 +4171,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -4211,7 +4213,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -4237,7 +4239,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a coded image log and a 500-word analysis with recommendations.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 65, 96</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning. Use the staff-curated prompts only, keep outputs in a closed course space, and do not share them publicly. Check that the activity complies with the tool’s terms of use.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Give a content warning. Use the staff-curated prompts only, keep outputs in a closed course space, and do not share them publicly. Check that the activity complies with the tool’s terms of use.</p>
 </div>
 </details>
 </li>
@@ -4253,7 +4255,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -4295,7 +4297,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 5–7</dd></div>
 
@@ -4321,7 +4323,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> the redrafted clause with a 400-word commentary.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 55, 99</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> No cloning of anyone’s voice or face. Any practical demonstration uses only a consenting student’s own likeness, in a closed course space.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> No cloning of anyone’s voice or face. Any practical demonstration uses only a consenting student’s own likeness, in a closed course space.</p>
 </div>
 </details>
 </li>
@@ -4337,7 +4339,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -4379,7 +4381,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–6</dd></div>
 
@@ -4405,7 +4407,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> a verification log and a one-page checklist.</p>
 <p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> 49, 55, 98</p>
-<p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use published material only. Students do not create synthetic media of real people.</p>
+<p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> Use published material only. Students do not create synthetic media of real people.</p>
 </div>
 </details>
 </li>
@@ -4421,7 +4423,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">Level</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">FHEQ 4–7</dd></div>
 
@@ -4461,9 +4463,9 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
-<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px; border-top: 1px solid var(--fg); padding-top: 18px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Sources for the framework section of the guide:</p>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
 
@@ -4537,10 +4539,10 @@ Download the full guide (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build AI literacy into your programme</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build AI literacy into your programme</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops help a team agree its position on AI and put activities like these into its own modules.</p>
 </div>
 <a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
@@ -4549,8 +4551,8 @@ Download the full guide (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
@@ -4563,18 +4565,18 @@ Download the full guide (Word)</a>
 
 <a href="#list" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to the activities</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 <sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
 </sc-if>
@@ -4588,9 +4590,9 @@ Download the full guide (Word)</a>
 
 <main style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI literacy across the disciplines</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI literacy across the disciplines</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">100 practical activities in ten groups: a foundation set that works in every discipline, then nine subject groups, each ordered as a teaching sequence. Every activity gives its level, time, tools, data risk and the artefact students produce.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/developing-ai-literacy-across-the-disciplines.docx" download style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -4598,17 +4600,17 @@ Download the full guide (Word)</a>
 Download the full guide (Word)</a>
 <span style="font-size: 15px; color: var(--muted)">Includes the framework comparison, rationale and safety guidance</span>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="dims-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="dims-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">What AI literacy means here</h2>
+<h2 id="dims-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">What AI literacy means here</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted); max-width: 52ch">Six overlapping dimensions, synthesised from the major frameworks.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <sc-for list="{{dims}}" as="d" hint-placeholder-count="6">
 <li style="background: var(--bg); padding: 20px 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 18px; font-weight: 600; letter-spacing: -0.01em">{{d.name}}</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">{{d.text}}</span></li>
 </sc-for>
@@ -4617,17 +4619,17 @@ Download the full guide (Word)</a>
 </section>
 
 <section aria-labelledby="ev-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="ev-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Evidence standards</h2>
+<h2 id="ev-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Evidence standards</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted); max-width: 52ch">The codes in square brackets in the steps.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[P]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Prompt log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Record the tool, model or version, mode (e.g. search off or on, deep research, agent), access tier (free, paid or institution-licensed), date, exact prompt and unedited output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[R]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Repeat runs</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Outputs vary. For any comparison, run each condition at least three times in fresh sessions (five or more for bias and calibration tests) and report the range, not a single output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[V]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Verification log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">For each claim, record the source checked, what it actually says, and a verdict: supported, partly supported, unsupported, contradicted, or source not found.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[C]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Comparison table</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Name the criteria before comparing, and give at least one concrete example for each judgement.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[D]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Revision record</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Keep first and final versions, noting what changed and why.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[M]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Reproducible method</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">State the method, data, units, assumptions and any code, so another person could reproduce the result.</span></span></li></ul>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)"><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[P]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Prompt log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Record the tool, model or version, mode (e.g. search off or on, deep research, agent), access tier (free, paid or institution-licensed), date, exact prompt and unedited output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[R]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Repeat runs</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Outputs vary. For any comparison, run each condition at least three times in fresh sessions (five or more for bias and calibration tests) and report the range, not a single output.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[V]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Verification log</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">For each claim, record the source checked, what it actually says, and a verdict: supported, partly supported, unsupported, contradicted, or source not found.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[C]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Comparison table</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Name the criteria before comparing, and give at least one concrete example for each judgement.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[D]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Revision record</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Keep first and final versions, noting what changed and why.</span></span></li><li style="background: var(--bg); padding: 18px 20px; display: flex; gap: 14px"><span style="flex: 0 0 34px; font-weight: 600; font-variant-numeric: tabular-nums">[M]</span><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 17px; font-weight: 600">Reproducible method</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">State the method, data, units, assumptions and any code, so another person could reproduce the result.</span></span></li></ul>
 </div>
 </section>
 
 <section aria-label="Filter activities" style="padding: 0 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; max-width: 560px">
 <label for="act-search" style="font-size: 14px; font-weight: 500">Search</label>
 <input id="act-search" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="Try agent, feedback, wellbeing or Red" autocomplete="off" style="height: 52px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--bg); color: var(--fg); font-size: 17px; width: 100%; box-sizing: border-box">
@@ -4636,7 +4638,7 @@ Download the full guide (Word)</a>
 <span id="disc-label" style="font-size: 14px; font-weight: 500; min-width: 64px; padding-top: 12px">Discipline</span>
 <div role="group" aria-labelledby="disc-label" style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 600px">
 <sc-for list="{{chips}}" as="b" hint-placeholder-count="11">
-<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: {{b.bg}}; color: {{b.color}}; font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">{{b.label}} <span style="opacity: 0.7">{{b.count}}</span></button>
+<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: {{b.bg}}; color: {{b.color}}; font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">{{b.label}} <span style="opacity: 0.7">{{b.count}}</span></button>
 </sc-for>
 </div>
 </div>
@@ -4650,11 +4652,11 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="list" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 72px)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 72px)">
 <sc-for list="{{groups}}" as="g" hint-placeholder-count="3">
 <div style="display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid var(--fg); padding-bottom: 18px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">{{g.name}}</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.15">{{g.name}}</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; max-width: 72ch">{{g.intro}}</p>
 <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--muted); max-width: 80ch"><strong style="font-weight: 600; color: var(--fg)">Suggested sequence.</strong> {{g.seq}}</p>
 </div>
@@ -4671,7 +4673,7 @@ Download the full guide (Word)</a>
 <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" style="flex: 0 0 22px; margin-top: 2px"><path d="M12 5v14M5 12h14"></path></svg>
 </summary>
 <div style="padding: 0 0 26px 60px; display: flex; flex-direction: column; gap: 14px; max-width: 860px">
-<dl style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<dl class="hgrid" style="margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <sc-for list="{{a.fields}}" as="fd" hint-placeholder-count="5">
 <div style="background: var(--bg); padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><dt style="font-size: 13px; color: var(--muted)">{{fd.k}}</dt><dd style="margin: 0; font-size: 14px; line-height: 1.45">{{fd.v}}</dd></div>
 </sc-for>
@@ -4683,7 +4685,7 @@ Download the full guide (Word)</a>
 </ol>
 <p style="margin: 0; font-size: 16px; line-height: 1.6"><strong style="font-weight: 600">Students produce:</strong> {{a.produce}}</p>
 <sc-if value="{{a.hasPairs}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; font-size: 15px; color: var(--muted)"><strong style="font-weight: 600; color: var(--fg)">Pairs with:</strong> {{a.pairs}}</p></sc-if>
-<sc-if value="{{a.hasSafe}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 10px 14px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> {{a.safe}}</p></sc-if>
+<sc-if value="{{a.hasSafe}}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 12px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Run it safely.</strong> {{a.safe}}</p></sc-if>
 </div>
 </details>
 </li>
@@ -4702,9 +4704,9 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
-<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px; border-top: 1px solid var(--fg); padding-top: 18px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Sources for the framework section of the guide:</p>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
 <sc-for list="{{refs}}" as="r" hint-placeholder-count="10">
@@ -4716,10 +4718,10 @@ Download the full guide (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build AI literacy into your programme</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Build AI literacy into your programme</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">The AI-Ready Educator workshops help a team agree its position on AI and put activities like these into its own modules.</p>
 </div>
 <a href="courses.html#ai-ready" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See AI-Ready Educator</a>
@@ -4728,8 +4730,8 @@ Download the full guide (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>

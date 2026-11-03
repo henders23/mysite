@@ -16,6 +16,8 @@ button{font:inherit}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:16px;top:-80px;z-index:10}
 .skip:focus{top:16px}
+.hgrid{border-width:1px 0 0 1px!important}
+.hgrid>*{box-shadow:inset -1px -1px 0 var(--line)}
 a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .prose h2{margin:0;font-weight:600;font-size:clamp(22px,2.2vw,26px);letter-spacing:-0.025em;line-height:1.2}
 .prose p,.prose li{margin:0;font-size:17px;line-height:1.65}
@@ -29,18 +31,18 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0" aria-current="page">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0" aria-current="page">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 
 
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
@@ -52,9 +54,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="frameworks.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Theories and frameworks</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">Generative AI and Academic Literacies in In-sessional EAP</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="frameworks.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Theories and frameworks</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">Generative AI and Academic Literacies in In-sessional EAP</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">A critical and practical guide for in-sessional EAP practitioners, covering theory, frameworks, classroom activities, provision design and practitioner development.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/generative-ai-and-academic-literacies-insessional-eap.docx" download="" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -62,21 +64,21 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 Download the full guide (Word)</a>
 <a href="academic-literacies.html" class="ul-link" style="font-size: 16px; padding: 10px 0">The wider framework: academic literacies and AI</a>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="who-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="who-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Who it’s for</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="who-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Who it’s for</h2>
 <p style="flex: 3 1 560px; min-width: 0; margin: 0; padding-top: 16px; border-top: 1px solid var(--fg); font-size: 18px; line-height: 1.6; max-width: 70ch">In-sessional EAP practitioners and academic skills staff who work alongside disciplinary programmes, and the centre leads and heads of department who plan their provision and staff development. It assumes you already know genre, move and stance analysis, and shows how to turn that toolkit on AI-generated and hybrid text.</p>
 </div>
 </section>
 
 <section aria-labelledby="ideas-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
-<h2 id="ideas-h" style="margin: 0; padding-bottom: 14px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Six key ideas</h2>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h2 id="ideas-h" style="margin: 0; padding-bottom: 14px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Six key ideas</h2>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <li style="background: var(--bg); padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3">Prompting is the new study skills</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Generic “AI skills” modules repeat the old study-skills model. Good AI use depends on the discipline and genre, so AI teaching belongs inside discipline-embedded provision.</span></li>
 
@@ -95,8 +97,8 @@ Download the full guide (Word)</a>
 </section>
 
 <section aria-labelledby="inside-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="inside-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">What’s inside</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="inside-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">What’s inside</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 18px; font-weight: 600">Part One: Theoretical foundations</span><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">Reads the post-2022 AI literature through the academic literacies tradition (Lea and Street, Lillis and Scott, Ivanič) and condenses the result into five theses and a working definition of critical AI academic literacies.</span></li>
@@ -116,9 +118,9 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">References</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">References</h2>
 <p style="margin: 0; font-size: 15px; line-height: 1.5; color: var(--muted); max-width: 30ch">65 sources, each checked against the publisher’s record.</p>
 </div>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 18px 0 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55; border-top: 1px solid var(--fg)">
@@ -258,10 +260,10 @@ Download the full guide (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your in-sessional provision</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your in-sessional provision</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">I work with EAP and academic skills teams on provision design, staff development and assessment. It starts with a 20-minute scoping call.</p>
 </div>
 <a href="courses.html#consultancy" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See consultancy</a>
@@ -270,8 +272,8 @@ Download the full guide (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
@@ -284,18 +286,18 @@ Download the full guide (Word)</a>
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0" aria-current="page">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0" aria-current="page">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 <sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
 </sc-if>
@@ -309,9 +311,9 @@ Download the full guide (Word)</a>
 
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="frameworks.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Theories and frameworks</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">{{title}}</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="frameworks.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Theories and frameworks</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 18ch; text-wrap: balance">{{title}}</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">{{subtitle}}</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/generative-ai-and-academic-literacies-insessional-eap.docx" download style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -319,21 +321,21 @@ Download the full guide (Word)</a>
 Download the full guide (Word)</a>
 <a href="academic-literacies.html" class="ul-link" style="font-size: 16px; padding: 10px 0">The wider framework: academic literacies and AI</a>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="who-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="who-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Who it’s for</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="who-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">Who it’s for</h2>
 <p style="flex: 3 1 560px; min-width: 0; margin: 0; padding-top: 16px; border-top: 1px solid var(--fg); font-size: 18px; line-height: 1.6; max-width: 70ch">{{whoFor}}</p>
 </div>
 </section>
 
 <section aria-labelledby="ideas-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
-<h2 id="ideas-h" style="margin: 0; padding-bottom: 14px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Six key ideas</h2>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<h2 id="ideas-h" style="margin: 0; padding-bottom: 14px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Six key ideas</h2>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <sc-for list="{{ideas}}" as="k" hint-placeholder-count="6">
 <li style="background: var(--bg); padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 19px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.3">{{k.h}}</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">{{k.text}}</span></li>
 </sc-for>
@@ -342,8 +344,8 @@ Download the full guide (Word)</a>
 </section>
 
 <section aria-labelledby="inside-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="inside-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">What’s inside</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="inside-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">What’s inside</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <sc-for list="{{inside}}" as="p" hint-placeholder-count="6">
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 18px; font-weight: 600">{{p.h}}</span><span style="font-size: 16px; line-height: 1.6; color: var(--muted)">{{p.text}}</span></li>
@@ -353,9 +355,9 @@ Download the full guide (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 10px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">References</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">References</h2>
 <p style="margin: 0; font-size: 15px; line-height: 1.5; color: var(--muted); max-width: 30ch">{{refCount}} sources, each checked against the publisher’s record.</p>
 </div>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 18px 0 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55; border-top: 1px solid var(--fg)">
@@ -367,10 +369,10 @@ Download the full guide (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your in-sessional provision</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your in-sessional provision</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">I work with EAP and academic skills teams on provision design, staff development and assessment. It starts with a 20-minute scoping call.</p>
 </div>
 <a href="courses.html#consultancy" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See consultancy</a>
@@ -379,8 +381,8 @@ Download the full guide (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
