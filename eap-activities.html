@@ -22,6 +22,8 @@ details[open] .chev{transform:rotate(45deg)}
 .skip{position:absolute;left:16px;top:-80px;z-index:10}
 .skip:focus{top:16px}
 .qs:hover{background:var(--line)}
+.hgrid{border-width:1px 0 0 1px!important}
+.hgrid>*{box-shadow:inset -1px -1px 0 var(--line)}
 a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
 </head>
@@ -31,18 +33,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 <a href="#list" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to the activities</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 
 
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
@@ -54,9 +56,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 <main style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI as environment-builder</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI as environment-builder</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">Forty EAP activities in which AI builds the environment and students do the thinking. The tutor uses AI to generate the raw material judgement needs: rival summaries, subtly flawed essays, overconfident experts, broken search strategies. Every activity ends in an artefact of judgement.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/ai-as-environment-builder-eap-activities.docx" download="" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -64,24 +66,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 Download the full portfolio (Word)</a>
 <span style="font-size: 15px; color: var(--muted)">Includes a tested tutor prompt and four level adaptations for every activity</span>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="how-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="how-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How it works</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="how-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How it works</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)"><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Most activities need no student AI access.</strong> <span style="color: var(--muted)">The tutor prepares the material; students judge it. Only the experiments and production tasks in Categories 7–8 put AI in students’ hands, and every mark attaches to critique and verification.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Tell students what they are looking at.</strong> <span style="color: var(--muted)">Every artefact says it was made with AI for the activity and that its faults are deliberate. Invented sources are marked as fictional.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Check against the tutor key.</strong> <span style="color: var(--muted)">Every prompt ends by asking for a separate key listing each planted feature and where it is. Check the artefact against it, then run a second-pass check in a fresh chat.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Protect students’ work.</strong> <span style="color: var(--muted)">Before any student’s writing goes into a model, use your institution’s approved tool, remove identifying details and get the student’s agreement.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Debrief on judgement, not answers.</strong> <span style="color: var(--muted)">The learning is students saying what a good summary, claim or source must look like. Most activities take 45–60 minutes; each gives prep and class times.</span></li></ul>
 </div>
 </section>
 
 <section aria-labelledby="qs-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="qs-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Where to start</h2>
+<h2 id="qs-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Where to start</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted)">Choose a priority to show the activities for it.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 
 <li style="background: var(--bg)"><button type="button" class="qs" aria-pressed="false" style="width: 100%; min-height: 64px; padding: 16px 20px; border: 0; background: transparent; color: var(--fg); text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 16px; font-weight: 600; line-height: 1.35">Your first critical-reading session</span><span style="font-size: 14px; opacity: 0.75">E1 Three summaries, one article · E26 Supported, unsupported, undeterminable</span></button></li>
 
@@ -114,7 +116,7 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section aria-label="Filter activities" style="padding: 0 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; max-width: 560px">
 <label for="eap-search" style="font-size: 14px; font-weight: 500">Search</label>
 <input id="eap-search" type="search" value="" placeholder="Try hedging, lecture, paraphrase or dissertation" autocomplete="off" style="height: 52px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--bg); color: var(--fg); font-size: 17px; width: 100%; box-sizing: border-box">
@@ -123,23 +125,23 @@ Download the full portfolio (Word)</a>
 <span id="cat-label" style="font-size: 14px; font-weight: 500; min-width: 64px; padding-top: 12px">Category</span>
 <div role="group" aria-labelledby="cat-label" style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 600px">
 
-<button type="button" aria-pressed="true" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: var(--fg); color: var(--bg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">All <span style="opacity: 0.7">40</span></button>
+<button type="button" aria-pressed="true" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--fg); color: var(--bg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">All <span style="opacity: 0.7">40</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Reading <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Reading <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Writing <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Writing <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Seminars &amp; speaking <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Seminars &amp; speaking <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Listening <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Listening <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Research &amp; sources <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Research &amp; sources <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Calibration <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Calibration <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Generative-then-critical <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">Generative-then-critical <span style="opacity: 0.7">5</span></button>
 
-<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">AI literacy <span style="opacity: 0.7">5</span></button>
+<button type="button" aria-pressed="false" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">AI literacy <span style="opacity: 0.7">5</span></button>
 
 </div>
 </div>
@@ -151,10 +153,10 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section id="list" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 64px)">
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">1. Comparative &amp; evaluative reading</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">1. Comparative &amp; evaluative reading</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -386,7 +388,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">2. Diagnostic &amp; repair: academic writing</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">2. Diagnostic &amp; repair: academic writing</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -620,7 +622,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">3. Adversarial &amp; dialogic: seminars &amp; speaking</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">3. Adversarial &amp; dialogic: seminars &amp; speaking</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -852,7 +854,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">4. Listening &amp; lecture literacy</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">4. Listening &amp; lecture literacy</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -1084,7 +1086,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">5. Research &amp; source use</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">5. Research &amp; source use</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -1316,7 +1318,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">6. Calibration &amp; academic caution</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">6. Calibration &amp; academic caution</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -1548,7 +1550,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">7. Generative-then-critical</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">7. Generative-then-critical</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -1780,7 +1782,7 @@ Download the full portfolio (Word)</a>
 </div>
 
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">8. AI literacy: interrogation &amp; production</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">8. AI literacy: interrogation &amp; production</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 
 <li style="border-bottom: 1px solid var(--line)">
@@ -2016,8 +2018,8 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 18px 0 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55; border-top: 1px solid var(--fg)">
 
 <li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">ACRL (Association of College and Research Libraries) (2016) <em>Framework for information literacy for higher education</em>. Chicago, IL: ACRL. Available at: <a href="https://www.ala.org/acrl/standards/ilframework" target="_blank" rel="noopener" class="ul-link">https://www.ala.org/acrl/standards/ilframework<span class="sr-only"> (opens in a new tab)</span></a> (Accessed: 1 November 2026).</li>
@@ -2075,10 +2077,10 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your EAP provision for AI</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your EAP provision for AI</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">I work with EAP and academic skills teams on curriculum, staff development and assessment. It starts with a 20-minute scoping call.</p>
 </div>
 <a href="courses.html#consultancy" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See consultancy</a>
@@ -2087,8 +2089,8 @@ Download the full portfolio (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
@@ -2101,18 +2103,18 @@ Download the full portfolio (Word)</a>
 
 <a href="#list" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to the activities</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 <sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
 </sc-if>
@@ -2126,9 +2128,9 @@ Download the full portfolio (Word)</a>
 
 <main style="flex-grow: 1; display: flex; flex-direction: column">
 <section style="padding: clamp(40px, 6vw, 80px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
-<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 15px; padding: 10px 0">Activities and tools</a>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI as environment-builder</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<a href="activities.html" class="ul-link" style="align-self: flex-start; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 10px 0">Activities and tools</a>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">AI as environment-builder</h1>
 <p style="margin: 0; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.5; color: var(--muted); max-width: 60ch; text-wrap: pretty">Forty EAP activities in which AI builds the environment and students do the thinking. The tutor uses AI to generate the raw material judgement needs: rival summaries, subtly flawed essays, overconfident experts, broken search strategies. Every activity ends in an artefact of judgement.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center">
 <a href="https://paulhendrie.vercel.app/writing/docs/ai-as-environment-builder-eap-activities.docx" download style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">
@@ -2136,24 +2138,24 @@ Download the full portfolio (Word)</a>
 Download the full portfolio (Word)</a>
 <span style="font-size: 15px; color: var(--muted)">Includes a tested tutor prompt and four level adaptations for every activity</span>
 </div>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-labelledby="how-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 id="how-h" style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How it works</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 id="how-h" style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">How it works</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)"><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Most activities need no student AI access.</strong> <span style="color: var(--muted)">The tutor prepares the material; students judge it. Only the experiments and production tasks in Categories 7–8 put AI in students’ hands, and every mark attaches to critique and verification.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Tell students what they are looking at.</strong> <span style="color: var(--muted)">Every artefact says it was made with AI for the activity and that its faults are deliberate. Invented sources are marked as fictional.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Check against the tutor key.</strong> <span style="color: var(--muted)">Every prompt ends by asking for a separate key listing each planted feature and where it is. Check the artefact against it, then run a second-pass check in a fresh chat.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Protect students’ work.</strong> <span style="color: var(--muted)">Before any student’s writing goes into a model, use your institution’s approved tool, remove identifying details and get the student’s agreement.</span></li><li style="padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.6"><strong style="font-weight: 600">Debrief on judgement, not answers.</strong> <span style="color: var(--muted)">The learning is students saying what a good summary, claim or source must look like. Most activities take 45–60 minutes; each gives prep and class times.</span></li></ul>
 </div>
 </section>
 
 <section aria-labelledby="qs-h" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="qs-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Where to start</h2>
+<h2 id="qs-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Where to start</h2>
 <p style="margin: 0; font-size: 15px; color: var(--muted)">Choose a priority to show the activities for it.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <sc-for list="{{quick}}" as="k" hint-placeholder-count="10">
 <li style="background: var(--bg)"><button type="button" class="qs" onClick="{{k.pick}}" aria-pressed="{{k.pressed}}" style="width: 100%; min-height: 64px; padding: 16px 20px; border: 0; background: {{k.bg}}; color: {{k.color}}; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 4px"><span style="font-size: 16px; font-weight: 600; line-height: 1.35">{{k.label}}</span><span style="font-size: 14px; opacity: 0.75">{{k.ids}}</span></button></li>
 </sc-for>
@@ -2162,7 +2164,7 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section aria-label="Filter activities" style="padding: 0 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 8px; max-width: 560px">
 <label for="eap-search" style="font-size: 14px; font-weight: 500">Search</label>
 <input id="eap-search" type="search" value="{{q}}" onChange="{{onSearch}}" placeholder="Try hedging, lecture, paraphrase or dissertation" autocomplete="off" style="height: 52px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: var(--bg); color: var(--fg); font-size: 17px; width: 100%; box-sizing: border-box">
@@ -2171,7 +2173,7 @@ Download the full portfolio (Word)</a>
 <span id="cat-label" style="font-size: 14px; font-weight: 500; min-width: 64px; padding-top: 12px">Category</span>
 <div role="group" aria-labelledby="cat-label" style="display: flex; flex-wrap: wrap; gap: 8px; flex: 1 1 600px">
 <sc-for list="{{chips}}" as="b" hint-placeholder-count="9">
-<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 999px; background: {{b.bg}}; color: {{b.color}}; font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">{{b.label}} <span style="opacity: 0.7">{{b.count}}</span></button>
+<button type="button" onClick="{{b.pick}}" aria-pressed="{{b.pressed}}" style="min-height: 44px; padding: 0 16px; border: 1px solid var(--ring); border-radius: 0; background: {{b.bg}}; color: {{b.color}}; font-size: 15px; cursor: pointer; display: flex; align-items: center; gap: 8px">{{b.label}} <span style="opacity: 0.7">{{b.count}}</span></button>
 </sc-for>
 </div>
 </div>
@@ -2185,10 +2187,10 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section id="list" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 64px)">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: clamp(44px, 5vw, 64px)">
 <sc-for list="{{groups}}" as="g" hint-placeholder-count="3">
 <div style="display: flex; flex-direction: column">
-<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">{{g.name}}</h2>
+<h2 style="margin: 0; padding-bottom: 16px; border-bottom: 1px solid var(--fg); font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em; line-height: 1.15">{{g.name}}</h2>
 <ul style="list-style: none; margin: 0; padding: 0">
 <sc-for list="{{g.items}}" as="a" hint-placeholder-count="5">
 <li style="border-bottom: 1px solid var(--line)">
@@ -2241,8 +2243,8 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 18px 0 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55; border-top: 1px solid var(--fg)">
 <sc-for list="{{refs}}" as="r" hint-placeholder-count="8">
 <li style="overflow-wrap: anywhere; padding-left: 24px; text-indent: -24px">{{r.a}} <em>{{r.i}}</em>{{r.b}}<sc-if value="{{r.hasLink}}" hint-placeholder-val="{{ false }}"> <a href="{{r.link}}" target="_blank" rel="noopener" class="ul-link">{{r.link}}<span class="sr-only"> (opens in a new tab)</span></a> {{r.acc}}</sc-if><sc-if value="{{r.hasDoi}}" hint-placeholder-val="{{ false }}"> doi: <a href="{{r.doiUrl}}" target="_blank" rel="noopener" class="ul-link">{{r.doi}}<span class="sr-only"> (opens in a new tab)</span></a>.</sc-if></li>
@@ -2252,10 +2254,10 @@ Download the full portfolio (Word)</a>
 </section>
 
 <section style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your EAP provision for AI</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Rethink your EAP provision for AI</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">I work with EAP and academic skills teams on curriculum, staff development and assessment. It starts with a 20-minute scoping call.</p>
 </div>
 <a href="courses.html#consultancy" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See consultancy</a>
@@ -2264,8 +2266,8 @@ Download the full portfolio (Word)</a>
 </section>
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>

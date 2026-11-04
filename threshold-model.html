@@ -18,6 +18,8 @@ button{font:inherit}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:16px;top:-80px;z-index:10}
 .skip:focus{top:16px}
+.hgrid{border-width:1px 0 0 1px!important}
+.hgrid>*{box-shadow:inset -1px -1px 0 var(--line)}
 a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
 </head>
@@ -27,18 +29,18 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 
 
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
@@ -51,7 +53,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 
 <section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
 <nav aria-label="Breadcrumb">
 <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
 <li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
@@ -61,19 +63,19 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 <li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">The Threshold Model</span></li>
 </ol>
 </nav>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
 <p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 56ch; text-wrap: pretty">Abundant feedback. Singular judgement. A model for learning, feedback and assessment in which AI multiplies practice and response, and every act of academic judgement stays human.</p>
 <dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Feedback</dd></div>
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Module and programme</dd></div>
 </dl>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
 <a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
 <a href="#model" class="navlink" style="font-size: 15px; padding: 12px 0">The model</a>
@@ -89,8 +91,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
 <div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
 <p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">Where should AI give feedback, and where must a human judge?</p>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">Feedback has always been rationed by staff time, and usually arrives after the work is finished, when it can no longer be used (Sadler, 1989; Boud and Molloy, 2013). AI removes the scarcity. The model uses that, without letting AI anywhere near the grade.</p>
@@ -101,14 +103,14 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="model" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Three zones, two crossings, three layers.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
 <h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three zones</h3>
-<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ol class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Workshop</span>
 <span style="font-size: 16px; line-height: 1.55">Rehearsal. Frequent, low-stakes and ungraded by design. Failure is free and repetition unlimited. Each module protects two to four difficulties where AI is switched off.</span>
@@ -147,9 +149,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="ladder" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Four kinds of feedback. Confusing them is the commonest failure in AI-augmented course design.</p>
 </div>
 <div style="overflow-x: auto">
@@ -176,8 +178,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 
 <li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
@@ -265,9 +267,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="personalisation" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Four levers move. The criteria and the grade never do.</p>
 </div>
 <div style="flex: 3 1 560px; min-width: 0; overflow-x: auto">
@@ -290,9 +292,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Judgement weighs the artefact, the student's account of it, and their answers. The balance follows the discipline.</p>
 </div>
 <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 40px">
@@ -393,9 +395,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Start with one module.</p>
 </div>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
@@ -409,8 +411,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It is not a workload saving.</strong> <span style="color: var(--muted)">Close to neutral in year one, modestly positive after. Marking falls; oral time is the largest new cost and has to be timetabled.</span></li>
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs regulations behind it.</strong> <span style="color: var(--muted)">Without an explicit ban on AI in judgement, workload pressure erodes the principle within two years.</span></li>
@@ -422,8 +424,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="border-bottom: 1px solid var(--line)">
 <a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
@@ -444,9 +446,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
-<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
 
@@ -485,10 +487,10 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section style="padding: 0 0 clamp(48px, 6vw, 72px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">Use the Redesign Lab to apply it to one module’s feedback and assessment, or join the AI Collegium to develop it in your own practice alongside peers from other institutions.</p>
 </div>
 <a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
@@ -497,7 +499,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 </section>
 
 <section style="padding: 0 0 clamp(48px, 6vw, 72px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
 All theories and frameworks
@@ -507,8 +509,8 @@ All theories and frameworks
 
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
@@ -521,18 +523,18 @@ All theories and frameworks
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 <sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
 </sc-if>
@@ -547,7 +549,7 @@ All theories and frameworks
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 
 <section style="padding: clamp(32px, 5vw, 64px) 0 clamp(32px, 4vw, 48px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
 <nav aria-label="Breadcrumb">
 <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 15px; color: var(--muted)">
 <li><a href="frameworks.html" class="ul-link" style="display: inline-block; padding: 10px 0">Theories and frameworks</a></li>
@@ -557,19 +559,19 @@ All theories and frameworks
 <li><span aria-current="page" style="display: inline-block; padding: 10px 0; color: var(--fg)">The Threshold Model</span></li>
 </ol>
 </nav>
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(40px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(44px, 7vw, 96px); line-height: 0.96; letter-spacing: -0.045em; max-width: 16ch; text-wrap: balance">The Threshold Model</h1>
 <p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 56ch; text-wrap: pretty">Abundant feedback. Singular judgement. A model for learning, feedback and assessment in which AI multiplies practice and response, and every act of academic judgement stays human.</p>
 <dl style="margin: 8px 0 0; display: flex; flex-wrap: wrap; gap: 16px 48px; font-size: 15px">
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Area</dt><dd style="margin: 0; font-weight: 500">Feedback</dd></div>
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Source</dt><dd style="margin: 0; font-weight: 500">AI for HE</dd></div>
 <div style="display: flex; flex-direction: column; gap: 4px"><dt style="color: var(--muted)">Works at</dt><dd style="margin: 0; font-weight: 500">Module and programme</dd></div>
 </dl>
-<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 12px 16px; border-left: 3px solid var(--fg); background: var(--line); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
+<p class="noprint" style="margin: 4px 0 0; max-width: 78ch; padding: 14px 0 0; border-top: 1px solid var(--fg); font-size: 15px; line-height: 1.55"><strong style="font-weight: 600">Please note.</strong> These are suggestions and directions for exploration, not settled answers. They draw on published research and practice but have not been peer reviewed. Adapt what you use to your context, and check your institution’s policies before acting on it.</p>
 </div>
 </section>
 
 <section aria-label="On this page" style="padding: 0 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <nav aria-label="On this page" style="border-top: 1px solid var(--fg); border-bottom: 1px solid var(--line); padding: 8px 0; display: flex; flex-wrap: wrap; gap: 0 28px">
 <a href="#question" class="navlink" style="font-size: 15px; padding: 12px 0">The question</a>
 <a href="#model" class="navlink" style="font-size: 15px; padding: 12px 0">The model</a>
@@ -585,8 +587,8 @@ All theories and frameworks
 </section>
 
 <section id="question" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The question</h2>
 <div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 68ch">
 <p style="margin: 0; font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -0.02em">Where should AI give feedback, and where must a human judge?</p>
 <p style="margin: 0; font-size: 18px; line-height: 1.6; color: var(--muted)">Feedback has always been rationed by staff time, and usually arrives after the work is finished, when it can no longer be used (Sadler, 1989; Boud and Molloy, 2013). AI removes the scarcity. The model uses that, without letting AI anywhere near the grade.</p>
@@ -597,14 +599,14 @@ All theories and frameworks
 </section>
 
 <section id="model" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The model</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Three zones, two crossings, three layers.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 12px">
 <h3 style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Three zones</h3>
-<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ol class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <li style="background: var(--bg); padding: 28px 24px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 24px; font-weight: 600; letter-spacing: -0.02em">The Workshop</span>
 <span style="font-size: 16px; line-height: 1.55">Rehearsal. Frequent, low-stakes and ungraded by design. Failure is free and repetition unlimited. Each module protects two to four difficulties where AI is switched off.</span>
@@ -643,9 +645,9 @@ All theories and frameworks
 </section>
 
 <section id="ladder" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">The feedback ladder</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Four kinds of feedback. Confusing them is the commonest failure in AI-augmented course design.</p>
 </div>
 <div style="overflow-x: auto">
@@ -672,8 +674,8 @@ All theories and frameworks
 </section>
 
 <section id="principles" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Ten principles</h2>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <sc-for list="{{principles}}" as="p" hint-placeholder-count="10">
 <li style="display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line)">
@@ -689,9 +691,9 @@ All theories and frameworks
 </section>
 
 <section id="personalisation" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Personalisation</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Four levers move. The criteria and the grade never do.</p>
 </div>
 <div style="flex: 3 1 560px; min-width: 0; overflow-x: auto">
@@ -714,9 +716,9 @@ All theories and frameworks
 </section>
 
 <section id="disciplines" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 16px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Three disciplines</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Judgement weighs the artefact, the student's account of it, and their answers. The balance follows the discipline.</p>
 </div>
 <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 32px 40px">
@@ -745,9 +747,9 @@ All theories and frameworks
 </section>
 
 <section id="tomorrow" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
 <div style="flex: 1 1 260px; display: flex; flex-direction: column; gap: 12px">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Use it tomorrow</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 32ch">Start with one module.</p>
 </div>
 <ol style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
@@ -761,8 +763,8 @@ All theories and frameworks
 </section>
 
 <section id="limits" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Where it falls short</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It is not a workload saving.</strong> <span style="color: var(--muted)">Close to neutral in year one, modestly positive after. Marking falls; oral time is the largest new cost and has to be timetabled.</span></li>
 <li style="padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 17px; line-height: 1.55"><strong style="font-weight: 600">It needs regulations behind it.</strong> <span style="color: var(--muted)">Without an explicit ban on AI in judgement, workload pressure erodes the principle within two years.</span></li>
@@ -774,8 +776,8 @@ All theories and frameworks
 </section>
 
 <section id="related" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Works with</h2>
 <ul style="flex: 3 1 560px; min-width: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="border-bottom: 1px solid var(--line)">
 <a href="assessment-redesign.html" class="row" style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 6px 32px; padding: 20px 0; text-decoration: none">
@@ -796,9 +798,9 @@ All theories and frameworks
 </section>
 
 <section id="sources" style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px">
-<h2 style="flex: 1 1 260px; margin: 0; font-weight: 600; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
-<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px; border-top: 1px solid var(--fg); padding-top: 18px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 16px 48px; padding-top: 28px; background: linear-gradient(var(--fg), var(--fg)) center top / calc(100% - 2 * clamp(20px, 4vw, 48px)) 1px no-repeat">
+<h2 style="flex: 1 1 260px; margin: 0; font-weight: 500; font-size: clamp(26px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Sources</h2>
+<div style="flex: 3 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
 <p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted)">Everything cited on this page, in Cite Them Right Harvard.</p>
 <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; font-size: 16px; line-height: 1.55">
 <sc-for list="{{refs}}" as="r" hint-placeholder-count="14">
@@ -817,10 +819,10 @@ All theories and frameworks
 </section>
 
 <section style="padding: 0 0 clamp(48px, 6vw, 72px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 44px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 10px; max-width: 58ch">
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.03em; line-height: 1.1">Put the model into practice</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">Use the Redesign Lab to apply it to one module’s feedback and assessment, or join the AI Collegium to develop it in your own practice alongside peers from other institutions.</p>
 </div>
 <a href="courses.html#lab" style="display: inline-flex; align-items: center; height: 52px; padding: 0 22px; background: var(--bg); color: var(--fg); text-decoration: none; font-size: 16px; font-weight: 500">See the Redesign Lab</a>
@@ -829,7 +831,7 @@ All theories and frameworks
 </section>
 
 <section style="padding: 0 0 clamp(48px, 6vw, 72px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <a href="frameworks.html" class="ul-link" style="display: inline-flex; align-items: center; gap: 10px; padding: 12px 0; font-size: 16px; font-weight: 500">
 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12H4M10 6l-6 6 6 6"></path></svg>
 All theories and frameworks
@@ -839,8 +841,8 @@ All theories and frameworks
 
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>

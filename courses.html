@@ -22,6 +22,8 @@ details[open] .chev{transform:rotate(45deg)}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:16px;top:-80px;z-index:10}
 .skip:focus{top:16px}
+.hgrid{border-width:1px 0 0 1px!important}
+.hgrid>*{box-shadow:inset -1px -1px 0 var(--line)}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 </style>
 </head>
@@ -31,18 +33,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" aria-current="page" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" aria-current="page" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" aria-label="Switch to dark mode" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 
 
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
@@ -55,8 +57,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 
 <section style="padding: clamp(40px, 6vw, 88px) 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(44px, 6.5vw, 84px); line-height: 1.02; letter-spacing: -0.045em">Take a course</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(48px, 8vw, 116px); line-height: 0.96; letter-spacing: -0.045em">Take a course</h1>
 <p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 58ch; text-wrap: pretty">Most of my work is commissioned by institutions and delivered online to a whole team. Start with a half-day workshop, go deeper with the Redesign Lab, or scope something bespoke. The Collegium runs once a year for individual educators.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 4px">
 <a href="https://calendly.com/aiforhe-info/new-meeting" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">Book a 20-minute scoping call<span class="sr-only"> (opens in a new tab)</span></a>
@@ -66,7 +68,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section aria-labelledby="choose-h" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <h2 id="choose-h" style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Which is right for you?</h2>
 <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="border-bottom: 1px solid var(--line)"><a href="#ai-ready" class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 32px; padding: 20px 0; text-decoration: none"><span style="flex: 2 1 320px; font-size: 18px; line-height: 1.4; color: var(--muted)">Your team wants to use AI confidently and critically</span><span class="name" style="flex: 1 1 240px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em">AI-Ready Educator</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a></li>
@@ -80,10 +82,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 
 <section id="ai-ready" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For teams and departments</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">AI-Ready Educator</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">AI-Ready Educator</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">Confident, critical and creative AI use in HE</p>
 <dl style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; border-top: 1px solid var(--line); padding-top: 14px">
 <div style="display: flex; gap: 12px"><dt style="flex: 0 0 72px; color: var(--muted)">Format</dt><dd style="margin: 0">Online, 2 × half day</dd></div>
@@ -122,10 +124,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section id="vibe-coding" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For teams and departments</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Vibe Coding for Educational Purposes</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Vibe Coding for Educational Purposes</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">Build interactive learning tools without writing a line of code</p>
 <dl style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; border-top: 1px solid var(--line); padding-top: 14px">
 <div style="display: flex; gap: 12px"><dt style="flex: 0 0 72px; color: var(--muted)">Format</dt><dd style="margin: 0">Online, 2 × half day</dd></div>
@@ -164,10 +166,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section id="lab" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For one programme team</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Module &amp; Assessment Redesign Lab</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Module &amp; Assessment Redesign Lab</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">The workshops build capability. The Lab produces documents.</p>
 <dl style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; border-top: 1px solid var(--line); padding-top: 14px">
 <div style="display: flex; gap: 12px"><dt style="flex: 0 0 72px; color: var(--muted)">Format</dt><dd style="margin: 0">Online, 3 × half day over 6 weeks</dd></div>
@@ -210,10 +212,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section id="collegium" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For individual educators</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">The AI Collegium</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">The AI Collegium</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">Teaching, learning and AI in higher education</p>
 <dl style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; border-top: 1px solid var(--line); padding-top: 14px">
 <div style="display: flex; gap: 12px"><dt style="flex: 0 0 72px; color: var(--muted)">Format</dt><dd style="margin: 0">Online cohort, four phases</dd></div>
@@ -255,15 +257,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 
 <section id="consultancy" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid var(--fg); padding-top: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; border-top: 1px solid var(--fg); padding-top: 28px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For faculties and institutions</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Consultancy</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Consultancy</h2>
 </div>
 <p style="flex: 2 1 520px; margin: 0; font-size: 18px; line-height: 1.6; max-width: 64ch">The workshops serve a team. The Lab serves a programme. Consultancy is for the work that crosses both: strategy, policy and staff development at faculty or institutional scale, designed around your context rather than a fixed format.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Staff development programmes</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Multi-department or institution-wide AI capability programmes, sequenced and coherent, built so your own educational developers can sustain them after I step back.</span></li>
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Assessment strategy</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">A faculty-level review of where AI has really compromised integrity, where it hasn't, and what a defensible response looks like in practice.</span></li>
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Curriculum and graduate attributes</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Mapping where and how generative AI should be embedded across programmes, and what students should be able to do with it by graduation.</span></li>
@@ -273,19 +275,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section id="before" aria-labelledby="before-h" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="before-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Before you book</h2><p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Answers for people commissioning training, and free places to start.</p>
+<h2 id="before-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Before you book</h2><p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Answers for people commissioning training, and free places to start.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><li style="background: var(--bg); display: flex"><a href="buyer-faq.html" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">FAQ</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Questions from people commissioning training</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Format, numbers, what I need from you, data protection and booking.</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.coursera.org/learn/ai-fluency-for-educators" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">Anthropic · free on Coursera</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">AI Fluency for Educators<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A short free course on working with AI in teaching.</span><span class="sr-only"> (opens in a new tab)</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.elementsofai.com/" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">University of Helsinki · free</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Elements of AI<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A free introduction to what AI is and how it works, for non-specialists.</span><span class="sr-only"> (opens in a new tab)</span></a></li></ul>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)"><li style="background: var(--bg); display: flex"><a href="buyer-faq.html" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">FAQ</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Questions from people commissioning training</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Format, numbers, what I need from you, data protection and booking.</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.coursera.org/learn/ai-fluency-for-educators" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">Anthropic · free on Coursera</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">AI Fluency for Educators<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A short free course on working with AI in teaching.</span><span class="sr-only"> (opens in a new tab)</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.elementsofai.com/" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">University of Helsinki · free</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Elements of AI<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A free introduction to what AI is and how it works, for non-specialists.</span><span class="sr-only"> (opens in a new tab)</span></a></li></ul>
 </div>
 </section>
 
 <section aria-labelledby="call-h" style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; max-width: 60ch">
-<h2 id="call-h" style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.03em; line-height: 1.1">Start with a 20-minute scoping call</h2>
+<h2 id="call-h" style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.03em; line-height: 1.1">Start with a 20-minute scoping call</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">No pitch. Bring your messiest AI problem and leave with at least one thing you can act on next week, whether or not we end up working together. Most engagements are scoped on this call.</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px">
@@ -298,8 +300,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
@@ -312,18 +314,18 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 <a href="#content" class="skip" style="background: var(--fg); color: var(--bg); padding: 12px 16px; font-size: 15px; font-weight: 500; text-decoration: none">Skip to content</a>
 
-<header>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; min-height: 88px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
-<a href="index.html" style="font-weight: 600; font-size: 18px; letter-spacing: -0.02em; text-decoration: none; padding: 10px 0">AI for HE</a>
+<header style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; box-sizing: border-box; min-height: 80px; border-bottom: 1px solid var(--fg); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px">
+<a href="index.html" style="font-weight: 600; font-size: 17px; letter-spacing: -0.01em; text-decoration: none; padding: 10px 0">AI for HE</a>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 24px">
-<a href="frameworks.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Theories and frameworks</a>
-<a href="pedagogies.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Pedagogies</a>
-<a href="activities.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">Activities and tools</a>
-<a href="courses.html" aria-current="page" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0; text-decoration: underline">Take a course</a>
-<a href="about.html" class="navlink" style="font-size: 15px; font-weight: 500; padding: 12px 0">About</a>
+<a href="frameworks.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Theories and frameworks</a>
+<a href="pedagogies.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Pedagogies</a>
+<a href="activities.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">Activities and tools</a>
+<a href="courses.html" aria-current="page" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0; text-decoration: underline">Take a course</a>
+<a href="about.html" class="navlink" style="font-size: 14px; font-weight: 400; padding: 12px 0">About</a>
 </nav>
-<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 999px; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
+<button type="button" onClick="{{toggle}}" aria-label="{{toggleLabel}}" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--ring); border-radius: 0; background: transparent; color: var(--fg); cursor: pointer; padding: 0">
 <sc-if value="{{dark}}" hint-placeholder-val="{{ false }}">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
 </sc-if>
@@ -338,8 +340,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 <main id="content" style="flex-grow: 1; display: flex; flex-direction: column">
 
 <section style="padding: clamp(40px, 6vw, 88px) 0 clamp(40px, 5vw, 64px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
-<h1 style="margin: 0; font-weight: 600; font-size: clamp(44px, 6.5vw, 84px); line-height: 1.02; letter-spacing: -0.045em">Take a course</h1>
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+<h1 style="margin: 0; font-weight: 500; font-size: clamp(48px, 8vw, 116px); line-height: 0.96; letter-spacing: -0.045em">Take a course</h1>
 <p style="margin: 0; font-size: clamp(18px, 1.6vw, 22px); line-height: 1.5; color: var(--muted); max-width: 58ch; text-wrap: pretty">Most of my work is commissioned by institutions and delivered online to a whole team. Start with a half-day workshop, go deeper with the Redesign Lab, or scope something bespoke. The Collegium runs once a year for individual educators.</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 4px">
 <a href="https://calendly.com/aiforhe-info/new-meeting" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px; background: var(--fg); color: var(--bg); text-decoration: none; font-size: 16px; font-weight: 500">Book a 20-minute scoping call<span class="sr-only"> (opens in a new tab)</span></a>
@@ -349,7 +351,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section aria-labelledby="choose-h" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <h2 id="choose-h" style="margin: 0; font-size: 15px; font-weight: 500; color: var(--muted)">Which is right for you?</h2>
 <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--fg)">
 <li style="border-bottom: 1px solid var(--line)"><a href="#ai-ready" class="row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 6px 32px; padding: 20px 0; text-decoration: none"><span style="flex: 2 1 320px; font-size: 18px; line-height: 1.4; color: var(--muted)">Your team wants to use AI confidently and critically</span><span class="name" style="flex: 1 1 240px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em">AI-Ready Educator</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"></path></svg></a></li>
@@ -363,10 +365,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 <sc-for list="{{offers}}" as="o" hint-placeholder-count="4">
 <section id="{{o.id}}" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-wrap: wrap; gap: 24px 48px; border-top: 1px solid var(--fg); padding-top: 32px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">{{o.audience}}</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">{{o.name}}</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">{{o.name}}</h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.4; font-style: italic; color: var(--muted)">{{o.tagline}}</p>
 <dl style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px; border-top: 1px solid var(--line); padding-top: 14px">
 <div style="display: flex; gap: 12px"><dt style="flex: 0 0 72px; color: var(--muted)">Format</dt><dd style="margin: 0">{{o.format}}</dd></div>
@@ -404,15 +406,15 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </sc-for>
 
 <section id="consultancy" style="padding: 0 0 clamp(56px, 7vw, 96px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid var(--fg); padding-top: 32px">
-<div style="display: flex; flex-wrap: wrap; gap: 16px 48px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px; border-top: 1px solid var(--fg); padding-top: 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; border-top: 1px solid var(--fg); padding-top: 28px">
 <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 12px">
 <span style="font-size: 14px; color: var(--muted)">For faculties and institutions</span>
-<h2 style="margin: 0; font-weight: 600; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Consultancy</h2>
+<h2 style="margin: 0; font-weight: 500; font-size: clamp(28px, 3vw, 38px); letter-spacing: -0.035em; line-height: 1.08">Consultancy</h2>
 </div>
 <p style="flex: 2 1 520px; margin: 0; font-size: 18px; line-height: 1.6; max-width: 64ch">The workshops serve a team. The Lab serves a programme. Consultancy is for the work that crosses both: strategy, policy and staff development at faculty or institutional scale, designed around your context rather than a fixed format.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)">
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)">
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Staff development programmes</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Multi-department or institution-wide AI capability programmes, sequenced and coherent, built so your own educational developers can sustain them after I step back.</span></li>
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Assessment strategy</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">A faculty-level review of where AI has really compromised integrity, where it hasn't, and what a defensible response looks like in practice.</span></li>
 <li style="background: var(--bg); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px"><span style="font-size: 20px; font-weight: 600; letter-spacing: -0.015em">Curriculum and graduate attributes</span><span style="font-size: 16px; line-height: 1.55; color: var(--muted)">Mapping where and how generative AI should be embedded across programmes, and what students should be able to do with it by graduation.</span></li>
@@ -422,19 +424,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 </section>
 
 <section id="before" aria-labelledby="before-h" style="padding: 0 0 clamp(48px, 6vw, 80px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
 <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; border-bottom: 1px solid var(--fg); padding-bottom: 14px">
-<h2 id="before-h" style="margin: 0; font-weight: 600; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Before you book</h2><p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Answers for people commissioning training, and free places to start.</p>
+<h2 id="before-h" style="margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); letter-spacing: -0.03em">Before you book</h2><p style="margin: 0; font-size: 16px; line-height: 1.5; color: var(--muted); max-width: 52ch">Answers for people commissioning training, and free places to start.</p>
 </div>
-<ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line)"><li style="background: var(--bg); display: flex"><a href="buyer-faq.html" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">FAQ</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Questions from people commissioning training</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Format, numbers, what I need from you, data protection and booking.</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.coursera.org/learn/ai-fluency-for-educators" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">Anthropic · free on Coursera</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">AI Fluency for Educators<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A short free course on working with AI in teaching.</span><span class="sr-only"> (opens in a new tab)</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.elementsofai.com/" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">University of Helsinki · free</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Elements of AI<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A free introduction to what AI is and how it works, for non-specialists.</span><span class="sr-only"> (opens in a new tab)</span></a></li></ul>
+<ul class="hgrid" style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr)); gap: 0; border: 1px solid var(--line)"><li style="background: var(--bg); display: flex"><a href="buyer-faq.html" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">FAQ</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Questions from people commissioning training</span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">Format, numbers, what I need from you, data protection and booking.</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.coursera.org/learn/ai-fluency-for-educators" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">Anthropic · free on Coursera</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">AI Fluency for Educators<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A short free course on working with AI in teaching.</span><span class="sr-only"> (opens in a new tab)</span></a></li><li style="background: var(--bg); display: flex"><a href="https://www.elementsofai.com/" target="_blank" rel="noopener" style="flex: 1; color: var(--fg); text-decoration: none; padding: 22px 22px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; color: var(--muted)">University of Helsinki · free</span><span style="display: flex; align-items: center; gap: 8px; font-size: 20px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.25">Elements of AI<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span><span style="font-size: 15px; line-height: 1.55; color: var(--muted)">A free introduction to what AI is and how it works, for non-specialists.</span><span class="sr-only"> (opens in a new tab)</span></a></li></ul>
 </div>
 </section>
 
 <section aria-labelledby="call-h" style="padding: 0 0 clamp(64px, 9vw, 120px)">
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px); box-sizing: border-box">
+<div style="width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); box-sizing: border-box">
 <div style="background: var(--fg); color: var(--bg); padding: clamp(28px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px">
 <div style="flex: 1 1 420px; display: flex; flex-direction: column; gap: 12px; max-width: 60ch">
-<h2 id="call-h" style="margin: 0; font-weight: 600; font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.03em; line-height: 1.1">Start with a 20-minute scoping call</h2>
+<h2 id="call-h" style="margin: 0; font-weight: 500; font-size: clamp(26px, 2.8vw, 36px); letter-spacing: -0.03em; line-height: 1.1">Start with a 20-minute scoping call</h2>
 <p style="margin: 0; font-size: 17px; line-height: 1.6; color: var(--muted-inv)">No pitch. Bring your messiest AI problem and leave with at least one thing you can act on next week, whether or not we end up working together. Most engagements are scoped on this call.</p>
 </div>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px">
@@ -447,8 +449,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid cur
 
 </main>
 
-<footer>
-<div style="width: 100%; max-width: 1240px; margin: 0 auto; padding: 28px clamp(20px, 4vw, 56px) 40px; box-sizing: border-box; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
+<footer style="padding: 0 clamp(20px, 4vw, 48px)">
+<div style="width: 100%; max-width: 1184px; margin: 0 auto; padding: 28px 0 40px; box-sizing: border-box; border-top: 1px solid var(--fg); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 14px; color: var(--muted)">
 <span>© 2026 AI for HE · <a href="privacy.html" style="text-decoration: none">Privacy</a> · <a href="https://paulhendrie.vercel.app/writing/assimilating-intrusion/index.html" target="_blank" rel="noopener" style="text-decoration: none">Writing<span class="sr-only"> (opens in a new tab)</span></a></span>
 <a href="mailto:info@aiforhe.com" style="text-decoration: none; padding: 10px 0">info@aiforhe.com</a>
 </div>
